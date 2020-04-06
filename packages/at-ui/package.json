@@ -1,0 +1,42 @@
+{
+  "name": "net-ui",
+  "version": "1.0.0-alpha.0",
+  "description": "A UI Component Library with Vue.js",
+  "homepage": "https://at.aotu.io",
+  "main": "dist/at.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "dev": "node build/dev-server",
+    "lint": "eslint --ext .js,.vue src docs build --ignore-pattern src/stylesheet test/unit/specs test/e2e/specs",
+    "dist": "npm run build:locale && npm run build:component && npm run build:doc",
+    "build:doc": "webpack --config build/webpack.prod.conf.js -p",
+    "build:component": "node build/component",
+    "build:locale": "node build/locale",
+    "prepublish": "npm run build:locale && npm run build:component"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:at-ui/at-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/at-ui/at-ui/issues"
+  },
+  "keywords": [
+    "at",
+    "at-ui",
+    "desktop",
+    "ui",
+    "framework",
+    "component"
+  ],
+  "files": [
+    "dist/locale",
+    "dist/at.js",
+    "dist/at.min.js",
+    "src"
+  ],
+  "author": "Koppt Ho <kopptsoft@gmail.com>",
+  "license": "MIT"
+}

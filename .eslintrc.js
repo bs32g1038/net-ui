@@ -1,14 +1,14 @@
 module.exports = {
-  root: true,
-  extends: 'o2team',
-  // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
-  // add your custom rules here
-  'rules': {
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'prefer-spread': 'off',
-    'class-methods-use-this': 'off'
-  }
-}
+    root: true,
+    env: {
+        node: true,
+    },
+    extends: ['plugin:vue/essential', 'eslint:recommended', '@vue/prettier'],
+    parserOptions: {
+        parser: 'babel-eslint',
+    },
+    rules: {
+        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    },
+};
