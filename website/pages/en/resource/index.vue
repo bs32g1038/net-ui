@@ -2,7 +2,7 @@
 export default {
     layout(context) {
         const { redirect } = context;
-        redirect('/zh');
+        redirect('/en/resource/design');
     },
 };
 </script>

@@ -1,13 +1,8 @@
-<template>
-    <div>test</div>
-</template>
-
 <script>
 export default {
     layout(context) {
-        // Universal keys
         const { redirect } = context;
-        redirect('/guide/color');
+        redirect('/zh/resource/design');
     },
 };
 </script>

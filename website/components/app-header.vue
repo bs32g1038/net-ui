@@ -3,7 +3,7 @@
         <div class="nav-container">
             <div class="nav-left">
                 <div class="logo">
-                    <nuxt-link :to="{ name: lang === 'en' ? 'Home-en' : 'Home' }">
+                    <nuxt-link :to="lang === 'en' ? '/en' : '/zh'">
                         <img class="logo-img" src="../assets/logo-at@2x.png" preload="" />
                         <span>AT UIKIT</span>
                     </nuxt-link>
@@ -12,17 +12,17 @@
             </div>
             <div v-if="lang === 'en'" class="nav-right">
                 <ul class="navbar">
-                    <li><router-link to="/guide">Guide</router-link></li>
-                    <li><router-link :to="{ name: 'Docs-en' }">Component</router-link></li>
-                    <li><router-link :to="{ name: 'Resource-en' }">Resource</router-link></li>
+                    <li><nuxt-link to="/en/guide">Guide</nuxt-link></li>
+                    <li><nuxt-link to="/en/docs">Component</nuxt-link></li>
+                    <li><nuxt-link to="/en/resource">Resource</nuxt-link></li>
                 </ul>
                 <div class="btn-language" @click="switchLang('zh')">中文</div>
             </div>
             <div v-else class="nav-right">
                 <ul class="navbar">
-                    <li><router-link to="/guide">指南</router-link></li>
-                    <li><router-link to="/docs">组件</router-link></li>
-                    <li><router-link to="/resource">资源</router-link></li>
+                    <li><nuxt-link to="/zh/guide">指南</nuxt-link></li>
+                    <li><nuxt-link to="/zh/docs">组件</nuxt-link></li>
+                    <li><nuxt-link to="/zh/resource">资源</nuxt-link></li>
                 </ul>
                 <div class="btn-language" @click="switchLang('en')">EN</div>
             </div>
@@ -82,15 +82,7 @@ export default {
         },
         switchLang(targetLang) {
             if (this.lang === targetLang) return;
-
-            this.$i18n.locale = targetLang;
-            localStorage.setItem('net-ui-language', targetLang);
-
-            if (this.$route.name === 'Home') {
-                this.$router.push({ name: 'Home-en' });
-            } else {
-                this.$router.push(this.$route.path.replace(this.lang, targetLang));
-            }
+            this.$router.push(this.$route.path.replace(this.lang, targetLang));
         },
     },
 };
@@ -182,7 +174,7 @@ $header-height: 80px;
                     width: 100%;
                     background-color: #6190e8;
                 }
-                &.router-link-active {
+                &.nuxt-link-active {
                     color: $brand-blue-500;
 
                     &::after {
