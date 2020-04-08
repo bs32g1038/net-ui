@@ -1,13 +1,14 @@
 {
   "name": "net-ui-style",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "The StyleSheet for NET-UI",
   "scss": "src/index.scss",
   "main": "css/at.css",
   "style": "css/at.css",
   "scripts": {
-    "build": "npm run build-clean && npm run copy && npm run build-scss && npm run build-scss-minify && npm run build-autoprefix",
+    "build": "npm run build-clean && npm run copy && npm run generate-one-scss && npm run build-scss && npm run build-scss-minify && npm run build-autoprefix",
     "build-clean": "rimraf css",
+    "generate-one-scss": "scss-bundle --config ./scss-bundle.config.json",
     "build-scss": "node-sass --output-style expanded --source-map true src/index.scss css/at.css",
     "build-scss-minify": "node-sass --output-style compressed --source-map true src/index.scss css/at.min.css",
     "build-autoprefix": "postcss --use autoprefixer -c postcss.json css/*.css -d css/",
@@ -28,5 +29,14 @@
     "framework"
   ],
   "author": "Koppt Ho <kopptsoft@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "copyfiles": "^2.2.0",
+    "eslint-config-o2team": "^0.1.7",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "scss-bundle": "^3.1.1"
+  }
 }

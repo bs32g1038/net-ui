@@ -31,8 +31,7 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
-    "bootstrap": "lerna bootstrap",
-    "docs": "vuepress dev docs",
+    "bootstrap": "lerna bootstrap --use-workspaces",
     "format": "prettier **/**/*.{ts,tsx,js,vue} --config ./.prettierrc --ignore-path ./.prettierignore --write"
   },
   "husky": {
