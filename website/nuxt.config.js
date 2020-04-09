@@ -77,7 +77,7 @@ export default {
         extend(config, ctx) {
             config.resolve.alias = {
                 ...config.resolve.alias,
-                'net-ui-theme': path.resolve(__dirname, '../packages/net-ui-theme/src'),
+                'net-ui-theme': path.join(__dirname, 'node_modules/@net-ui/theme'),
             };
             config.module.rules.push({
                 test: /\.md$/,

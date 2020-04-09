@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'AtOptionGroup',
+    name: 'NetOptionGroup',
     props: {
         label: {
             type: String,

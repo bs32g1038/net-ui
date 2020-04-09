@@ -59,7 +59,7 @@ import AtInputNumber from 'net-ui/src/components/input-number';
 import { getStyle } from 'net-ui/src/utils/util';
 
 export default {
-    name: 'AtSlider',
+    name: 'NetSlider',
     components: {
         AtInputNumber,
         AtTooltip,

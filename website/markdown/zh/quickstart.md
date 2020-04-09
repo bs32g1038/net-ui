@@ -34,9 +34,9 @@ vue init net-ui/net-template my-project
 ```js
 import Vue from 'vue'
 import AtComponents from 'net-ui'
-import 'net-ui-theme'    // 引入组件样式
+import '@net-ui/theme'    // 引入组件样式
 
-// import 'net-ui-theme/src/index.scss'      // 或者引入未构建版本的 scss 样式
+// import '@net-ui/theme/src/index.scss'      // 或者引入未构建版本的 scss 样式
 
 Vue.use(AtComponents)
 ```
@@ -156,4 +156,4 @@ Vue.prototype.$Message = Message
 
 ## 自定义主题
 
-`AT-UI` 的样式已抽离成单独的项目 [AT-UI-Style](https://github.com/net-ui/net-ui-theme)，各个组件的样式变量都存放在 `net-ui-theme/src/variables/default.scss` 文件中。用户可根据实际需要，自定义组件的样式
+`AT-UI` 的样式已抽离成单独的项目 [AT-UI-Style](https://github.com/net-ui/@net-ui/theme)，各个组件的样式变量都存放在 `@net-ui/theme/src/variables/default.scss` 文件中。用户可根据实际需要，自定义组件的样式

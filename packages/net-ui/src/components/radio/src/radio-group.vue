@@ -8,7 +8,7 @@
 import Emitter from 'net-ui/src/mixins/emitter';
 
 export default {
-    name: 'AtRadioGroup',
+    name: 'NetRadioGroup',
     props: {
         value: [String, Number],
         size: String,
@@ -19,11 +19,11 @@ export default {
     watch: {
         value(value) {
             this.$emit('radio-group-change', value);
-            this.broadcast('AtRadio', 'init-data', value);
+            this.broadcast('NetRadio', 'init-data', value);
         },
     },
     mounted() {
-        this.broadcast('AtRadio', 'init-data', this.value);
+        this.broadcast('NetRadio', 'init-data', this.value);
     },
 };
 </script>

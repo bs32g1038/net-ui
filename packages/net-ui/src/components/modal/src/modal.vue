@@ -63,7 +63,7 @@
 import { t } from 'net-ui/src/locale';
 
 export default {
-    name: 'AtModal',
+    name: 'NetModal',
     props: {
         title: String,
         content: String,

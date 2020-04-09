@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'AtTimeline',
+    name: 'NetTimeline',
     props: {
         pending: {
             type: Boolean,

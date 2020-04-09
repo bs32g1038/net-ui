@@ -23,7 +23,7 @@
 
 <script>
 export default {
-    name: 'AtAlert',
+    name: 'NetAlert',
     props: {
         type: {
             type: String,

@@ -15,7 +15,7 @@
 import Emitter from 'net-ui/src/mixins/emitter';
 
 export default {
-    name: 'AtDropdownItem',
+    name: 'NetDropdownItem',
     mixins: [Emitter],
     props: {
         name: {
@@ -33,7 +33,7 @@ export default {
     methods: {
         handleClick(evt) {
             if (this.disabled) return;
-            this.dispatch('AtDropdown', 'menu-item-click', this.name);
+            this.dispatch('NetDropdown', 'menu-item-click', this.name);
         },
     },
 };

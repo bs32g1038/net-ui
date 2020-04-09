@@ -19,7 +19,7 @@
 import Emitter from 'net-ui/src/mixins/emitter';
 
 export default {
-    name: 'AtOption',
+    name: 'NetOption',
     mixins: [Emitter],
     inject: ['select'],
     props: {
@@ -52,7 +52,7 @@ export default {
     methods: {
         doSelect() {
             if (this.disabled) return false;
-            this.dispatch('AtSelect', 'on-select-selected', this.value);
+            this.dispatch('NetSelect', 'on-select-selected', this.value);
         },
         blur() {
             this.isFocus = false;

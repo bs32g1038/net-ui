@@ -30,7 +30,7 @@
 import Emitter from 'net-ui/src/mixins/emitter';
 
 export default {
-    name: 'AtRadio',
+    name: 'NetRadio',
     props: {
         value: [String, Number],
         name: String,
@@ -53,7 +53,7 @@ export default {
             this.$emit('input', store);
 
             if (this.isGroup) {
-                this.dispatch('AtRadioGroup', 'input', store);
+                this.dispatch('NetRadioGroup', 'input', store);
             }
         },
         value(val) {

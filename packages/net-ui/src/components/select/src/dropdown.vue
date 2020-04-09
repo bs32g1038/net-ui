@@ -33,7 +33,7 @@ export default {
     },
     methods: {
         update() {
-            if (this.$parent.$options.name === 'AtSelect') {
+            if (this.$parent.$options.name === 'NetSelect') {
                 this.width = this.$parent.$el.style.width | 0;
             }
         },

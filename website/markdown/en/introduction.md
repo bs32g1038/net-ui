@@ -9,7 +9,7 @@
 - Based on `Vue`
 - A NPM + Webpack + Babel Front-End development workflow
 - Support `ES2015`
-- CSS Style independent, make consistent user interfaces (See: [AT-UI Style](https://github.com/net-ui/net-ui-theme))
+- CSS Style independent, make consistent user interfaces (See: [AT-UI Style](https://github.com/net-ui/@net-ui/theme))
 - Friendly API
 
 ## Environment Support
@@ -22,7 +22,7 @@
 
 `AT-UI`：[![npm version](https://badge.fury.io/js/net-ui.svg)](https://badge.fury.io/js/net-ui)
 
-`AT-UI-Style`：[![npm version](https://badge.fury.io/js/net-ui-theme.svg)](https://badge.fury.io/js/net-ui-theme)
+`AT-UI-Style`：[![npm version](https://badge.fury.io/js/@net-ui/theme.svg)](https://badge.fury.io/js/@net-ui/theme)
 
 ## Contribution
 

@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'AtMenuItemGroup',
+    name: 'NetMenuItemGroup',
     props: {
         title: {
             type: String,

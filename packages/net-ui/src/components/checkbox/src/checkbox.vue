@@ -44,7 +44,7 @@ import { findComponentUpward } from 'net-ui/src/utils/util';
 import Emitter from 'net-ui/src/mixins/emitter';
 
 export default {
-    name: 'AtCheckbox',
+    name: 'NetCheckbox',
     mixins: [Emitter],
     props: {
         value: {
@@ -96,7 +96,7 @@ export default {
         },
     },
     mounted() {
-        this.parent = findComponentUpward(this, 'AtCheckboxGroup');
+        this.parent = findComponentUpward(this, 'NetCheckboxGroup');
         if (this.parent) {
             this.isGroup = true;
             this.parent.updateModel();

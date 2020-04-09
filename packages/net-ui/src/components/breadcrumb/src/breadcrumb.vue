@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'AtBreadcrumb',
+    name: 'NetBreadcrumb',
     props: {
         separator: {
             type: String,

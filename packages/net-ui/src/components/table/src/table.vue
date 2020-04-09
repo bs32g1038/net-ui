@@ -179,7 +179,7 @@ import Checkbox from 'net-ui/src/components/checkbox';
 import Pagination from 'net-ui/src/components/pagination';
 
 export default {
-    name: 'AtTable',
+    name: 'NetTable',
     components: {
         Checkbox,
         Pagination,

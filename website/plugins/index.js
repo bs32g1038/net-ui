@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import NetUi from 'net-ui';
+import NetUi from '@net-ui/core';
 import ContentSlotsDistributor from './ContentSlotsDistributor.vue';
 import OutboundLink from './OutboundLink.vue';
 import DemoBox from '../components/demobox.vue';

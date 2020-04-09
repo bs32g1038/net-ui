@@ -59,7 +59,7 @@
 import Emitter from 'net-ui/src/mixins/emitter';
 
 export default {
-    name: 'AtInput',
+    name: 'NetInput',
     mixins: [Emitter],
     props: {
         type: {
@@ -119,7 +119,7 @@ export default {
         },
         handleBlur(evt) {
             this.$emit('blur', evt);
-            this.dispatch('AtFormItem', 'on-form-item-blur', this.currentValue);
+            this.dispatch('NetFormItem', 'on-form-item-blur', this.currentValue);
         },
         handleInput(evt) {
             const value = evt.target.value;
@@ -129,7 +129,7 @@ export default {
         setCurrentValue(val) {
             if (val === this.currentValue) return;
             this.currentValue = val;
-            this.dispatch('AtFormItem', 'on-form-item-change', this.currentValue);
+            this.dispatch('NetFormItem', 'on-form-item-change', this.currentValue);
         },
     },
 };

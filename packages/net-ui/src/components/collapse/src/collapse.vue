@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'AtCollapse',
+    name: 'NetCollapse',
     props: {
         accordion: {
             type: Boolean,

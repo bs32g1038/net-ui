@@ -25,7 +25,7 @@
 import CollapseTransition from 'net-ui/src/utils/collapse-transition';
 
 export default {
-    name: 'AtCollapseItem',
+    name: 'NetCollapseItem',
     components: {
         CollapseTransition,
     },

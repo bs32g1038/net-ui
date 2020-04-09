@@ -41,9 +41,9 @@
                 <h1>一款轻量级、模块化的前端 UI 组件库</h1>
                 <div class="btn-container">
                     <div class="btn btn-begin">
-                        <nuxt-link :to="{ name: 'Introduction-zh' }">开始使用</nuxt-link>
+                        <nuxt-link to="/zh/docs/introduction">开始使用</nuxt-link>
                     </div>
-                    <div class="btn btn-github"><a href="https://github.com/net-ui/net-ui">Github</a></div>
+                    <div class="btn btn-github"><a href="https://github.com/bs32g1038/net-ui">Github</a></div>
                 </div>
             </div>
             <div class="prototype-screens flex">
@@ -65,7 +65,7 @@
                         了解设计指南，利用统一的规范进行设计赋能，帮助产品设计师，前端工程师，后台工程师迅速搭建中后台产品。
                     </div>
                     <div class="btn-readmore">
-                        <nuxt-link :to="{ name: 'Guide' }">查看详情 <i class="icon icon-chevron-right"></i></nuxt-link>
+                        <nuxt-link to="/zh/guide">查看详情 <i class="icon icon-chevron-right"></i></nuxt-link>
                     </div>
                 </div>
                 <div class="navigation-panel">
@@ -78,7 +78,7 @@
                         体验交互细节，开发中既可以根据需要单独引用，也可以使用全局方式引入所有组件。
                     </div>
                     <div class="btn-readmore">
-                        <nuxt-link :to="{ name: 'Docs' }">查看详情 <i class="icon icon-chevron-right"></i></nuxt-link>
+                        <nuxt-link to="/zh/docs">查看详情 <i class="icon icon-chevron-right"></i></nuxt-link>
                     </div>
                 </div>
                 <div class="navigation-panel">
@@ -91,9 +91,7 @@
                         工具快速搭建高保真的产品原型稿，减少沟通成本，提升工作效率。
                     </div>
                     <div class="btn-readmore">
-                        <nuxt-link :to="{ name: 'Resource' }"
-                            >查看详情 <i class="icon icon-chevron-right"></i
-                        ></nuxt-link>
+                        <nuxt-link to="/zh/resource">查看详情 <i class="icon icon-chevron-right"></i></nuxt-link>
                     </div>
                 </div>
             </div>

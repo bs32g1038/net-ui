@@ -30,7 +30,7 @@ import Emitter from 'net-ui/src/mixins/emitter';
 import { calcTextareaHeight } from './utils';
 
 export default {
-    name: 'AtTextarea',
+    name: 'NetTextarea',
     mixins: [Emitter],
     props: {
         value: String,

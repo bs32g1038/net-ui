@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    name: 'AtTimelineItem',
+    name: 'NetTimelineItem',
     props: {
         color: {
             type: String,

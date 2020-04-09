@@ -9,7 +9,7 @@ import Emitter from 'net-ui/src/mixins/emitter';
 import { findComponentsDownward } from 'net-ui/src/utils/util';
 
 export default {
-    name: 'AtMenu',
+    name: 'NetMenu',
     mixins: [Emitter],
     props: {
         mode: {
@@ -66,14 +66,14 @@ export default {
                 this.currentActiveName = -1;
             }
 
-            const submenus = findComponentsDownward(this, 'AtSubmenu');
+            const submenus = findComponentsDownward(this, 'NetSubmenu');
 
             if (submenus && submenus.length) {
                 submenus.forEach(submenu => {
                     submenu.$emit('on-update-active', false);
                 });
             }
-            this.broadcast('AtMenuItem', 'on-update-active', this.currentActiveName);
+            this.broadcast('NetMenuItem', 'on-update-active', this.currentActiveName);
         },
         routeToMenuItem(item) {
             const route = item.to || {};

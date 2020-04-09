@@ -33,7 +33,7 @@
 
 <script>
 export default {
-    name: 'AtStep',
+    name: 'NetStep',
     props: {
         title: String,
         icon: String,

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'AtForm',
+    name: 'NetForm',
     props: {
         model: Object,
         rules: Object,

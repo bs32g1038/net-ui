@@ -26,7 +26,7 @@
 
 <script>
 export default {
-    name: 'AtRate',
+    name: 'NetRate',
     props: {
         value: {
             type: Number,

@@ -19,7 +19,7 @@
 
 <script>
 export default {
-    name: 'AtSwitch',
+    name: 'NetSwitch',
     props: {
         value: {
             type: Boolean,

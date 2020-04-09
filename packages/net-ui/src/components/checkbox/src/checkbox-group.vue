@@ -9,7 +9,7 @@ import { findComponentsDownward } from 'net-ui/src/utils/util';
 import Emitter from 'net-ui/src/mixins/emitter';
 
 export default {
-    name: 'AtCheckboxGroup',
+    name: 'NetCheckboxGroup',
     mixins: [Emitter],
     props: {
         value: {
@@ -33,7 +33,7 @@ export default {
     methods: {
         updateModel() {
             const value = this.value;
-            this.childrens = findComponentsDownward(this, 'AtCheckbox');
+            this.childrens = findComponentsDownward(this, 'NetCheckbox');
 
             if (this.childrens) {
                 this.childrens.forEach(child => {

@@ -21,7 +21,7 @@
 
 <script>
 export default {
-    name: 'AtButton',
+    name: 'NetButton',
     props: {
         type: {
             type: String,

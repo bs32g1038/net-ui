@@ -42,7 +42,7 @@ import Emitter from 'net-ui/src/mixins/emitter';
 import PopoverMixin from 'net-ui/src/mixins/popover';
 
 export default {
-    name: 'AtSubmenu',
+    name: 'NetSubmenu',
     components: {
         CollapseTransition,
     },
@@ -62,7 +62,7 @@ export default {
             active: false,
             isOpen: this.opened,
             dropWidth: getStyle(this.$el, 'width'),
-            parentMenu: findComponentUpward(this, 'AtMenu'),
+            parentMenu: findComponentUpward(this, 'NetMenu'),
         };
     },
     computed: {
@@ -107,7 +107,7 @@ export default {
                 popover.style.left = 'initial';
                 popover.style.right = `-${trigger.offsetWidth + 4}px`;
                 popover.style.top = '0';
-            } else if (parent && name !== 'AtSubmenu') {
+            } else if (parent && name !== 'NetSubmenu') {
                 popover.style.left = '0';
                 popover.style.right = 'initial';
                 popover.style.top = `${trigger.offsetHeight + 2}px`;
@@ -123,7 +123,7 @@ export default {
             const opened = this.isOpen;
             if (this.inlineCollapsed) {
                 this.parentMenu.$children.forEach(item => {
-                    if (item.$options.name === 'AtSubmenu') {
+                    if (item.$options.name === 'NetSubmenu') {
                         item.isOpen = false;
                     }
                 });
@@ -153,7 +153,7 @@ export default {
             if (this.mode !== 'inline') {
                 this.isOpen = false;
             }
-            this.dispatch('AtMenu', 'on-menu-item-select', name);
+            this.dispatch('NetMenu', 'on-menu-item-select', name);
         });
         this.$on('on-update-active', status => {
             this.active = status;

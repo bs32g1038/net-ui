@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'AtButtonGroup',
+    name: 'NetButtonGroup',
     props: {
         size: String,
         gap: {

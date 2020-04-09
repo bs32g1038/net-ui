@@ -55,7 +55,7 @@ function getPropByPath(obj, path) {
 }
 
 export default {
-    name: 'AtFormItem',
+    name: 'NetFormItem',
     mixins: [Emitter],
     props: {
         label: {
@@ -99,7 +99,7 @@ export default {
     computed: {
         form() {
             let parent = this.$parent;
-            while (parent.$options.name !== 'AtForm') {
+            while (parent.$options.name !== 'NetForm') {
                 parent = parent.$parent;
             }
             return parent;
@@ -210,7 +210,7 @@ export default {
     },
     mounted() {
         if (this.prop) {
-            this.dispatch('AtForm', 'on-form-item-add', this);
+            this.dispatch('NetForm', 'on-form-item-add', this);
 
             Object.defineProperty(this, 'initialValue', {
                 value: this.fieldValue,
@@ -232,7 +232,7 @@ export default {
         }
     },
     beforeDestroy() {
-        this.dispatch('AtForm', 'on-form-item-remove', this);
+        this.dispatch('NetForm', 'on-form-item-remove', this);
     },
 };
 </script>

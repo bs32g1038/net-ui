@@ -8,7 +8,7 @@
 
 - 基于 `Vue` 开发的 UI 组件
 - 使用 npm + webpack + babel 的工作流，支持 ES2015
-- CSS 样式独立，即使使用不同的框架实现，也都能保持统一的 UI 风格（ 详见：[AT-UI Style](https://github.com/net-ui/net-ui-theme) ）
+- CSS 样式独立，即使使用不同的框架实现，也都能保持统一的 UI 风格（ 详见：[AT-UI Style](https://github.com/net-ui/@net-ui/theme) ）
 - 提供友好的 API，可灵活的使用组件
 
 ## 浏览器支持
@@ -21,7 +21,7 @@
 
 `AT-UI`：[![npm version](https://badge.fury.io/js/net-ui.svg)](https://badge.fury.io/js/net-ui)
 
-`AT-UI-Style`：[![npm version](https://badge.fury.io/js/net-ui-theme.svg)](https://badge.fury.io/js/net-ui-theme)
+`AT-UI-Style`：[![npm version](https://badge.fury.io/js/@net-ui/theme.svg)](https://badge.fury.io/js/@net-ui/theme)
 
 ## 贡献
 

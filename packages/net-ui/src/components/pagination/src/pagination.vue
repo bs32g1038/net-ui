@@ -161,7 +161,7 @@
 import Locale from 'net-ui/src/mixins/locale';
 
 export default {
-    name: 'AtPagination',
+    name: 'NetPagination',
     mixins: [Locale],
     props: {
         current: {

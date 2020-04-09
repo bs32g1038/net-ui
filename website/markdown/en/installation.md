@@ -9,7 +9,7 @@ Recommended use `npm` to development, enjoy the ecosystem of `node` and the chai
 ```bash
 npm install net-ui
 
-npm install net-ui-theme
+npm install @net-ui/theme
 ```
 
 ## CDN
@@ -22,7 +22,7 @@ Get the latest version of `AT-UI` from [jsDelivr](https://www.jsdelivr.com/packa
 <!-- import Vue -->
 <script src="//cdn.jsdelivr.net/npm/vue"></script>
 <!-- import CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/net-ui-theme/css/at.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@net-ui/theme/css/at.min.css">
 <!-- import JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/net-ui/dist/at.min.js"></script>
 ```
@@ -38,7 +38,7 @@ By using the script tag to import resources, we can quickly write a demo page wi
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>AT-UI Example</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/net-ui-theme/css/at.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@net-ui/theme/css/at.min.css">
   <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/net-ui/dist/at.min.js"></script>
   <style>

@@ -66,7 +66,7 @@ import Locale from 'net-ui/src/mixins/locale';
 import { findComponentsDownward } from 'net-ui/src/utils/util';
 
 export default {
-    name: 'AtSelect',
+    name: 'NetSelect',
     mixins: [Emitter, PopoverMixin, Locale],
     directives: { Clickoutside },
     props: {
@@ -190,12 +190,12 @@ export default {
             }
         },
         query(val) {
-            this.broadcast('AtOption', 'on-query-change', val);
+            this.broadcast('NetOption', 'on-query-change', val);
 
             let isHidden = true;
 
             this.$nextTick(() => {
-                const options = findComponentsDownward(this, 'AtOption');
+                const options = findComponentsDownward(this, 'NetOption');
                 options.forEach(option => {
                     if (!option.hidden) {
                         isHidden = false;
@@ -215,7 +215,7 @@ export default {
         hideMenu() {
             this.visible = false;
             this.focusIndex = 0;
-            this.broadcast('AtOption', 'on-select-close');
+            this.broadcast('NetOption', 'on-select-close');
         },
         handleClose() {
             this.hideMenu();
@@ -242,7 +242,7 @@ export default {
 
                     let hasFocus = false;
 
-                    const options = findComponentsDownward(this, 'AtOption');
+                    const options = findComponentsDownward(this, 'NetOption');
                     options.forEach(option => {
                         if (option.isFocus) {
                             hasFocus = true;
@@ -259,7 +259,7 @@ export default {
         selectFirstOption() {
             let firstOption;
 
-            const options = findComponentsDownward(this, 'AtOption');
+            const options = findComponentsDownward(this, 'NetOption');
             options.forEach(option => {
                 if (!firstOption && !option.hidden) {
                     firstOption = option;
@@ -270,7 +270,7 @@ export default {
         updateOptions() {
             const options = [];
 
-            const optionsEle = findComponentsDownward(this, 'AtOption');
+            const optionsEle = findComponentsDownward(this, 'NetOption');
             optionsEle.forEach(option => {
                 options.push({
                     value: option.value,
@@ -329,7 +329,7 @@ export default {
         },
         clearSingleSelect() {
             if (this.showCloseIcon) {
-                const options = findComponentsDownward(this, 'AtOption');
+                const options = findComponentsDownward(this, 'NetOption');
                 options.forEach(option => {
                     option.selected = false;
                 });
@@ -356,7 +356,7 @@ export default {
 
             let label = '';
 
-            const options = findComponentsDownward(this, 'AtOption');
+            const options = findComponentsDownward(this, 'NetOption');
             options.forEach(option => {
                 if (option.value === value) {
                     option.selected = true;
@@ -390,7 +390,7 @@ export default {
                 });
             }
 
-            const options = findComponentsDownward(this, 'AtOption');
+            const options = findComponentsDownward(this, 'NetOption');
 
             options.forEach(option => {
                 const index = values.indexOf(option.value);
@@ -424,7 +424,7 @@ export default {
             let isValid = false;
             let hasValidOption = false; // avoid infinite loops
 
-            const options = findComponentsDownward(this, 'AtOption');
+            const options = findComponentsDownward(this, 'NetOption');
 
             options.forEach((option, idx) => {
                 if (idx + 1 === this.focusIndex) {
@@ -464,7 +464,7 @@ export default {
         handleBlur() {
             setTimeout(() => {
                 if (!this.multiple && this.model !== '') {
-                    const options = findComponentsDownward(this, 'AtOption');
+                    const options = findComponentsDownward(this, 'NetOption');
                     options.forEach(option => {
                         if (option.value === this.model) {
                             this.query = typeof option.label === 'undefined' ? option.searchLabel : option.label;
@@ -482,7 +482,7 @@ export default {
         },
         modelToQuery() {
             if (!this.multiple && this.filterable && typeof this.model !== 'undefined') {
-                const options = findComponentsDownward(this, 'AtOption');
+                const options = findComponentsDownward(this, 'NetOption');
                 options.forEach(option => {
                     if (this.model === option.value) {
                         this.query = option.label || option.searchLabel || option.value;
@@ -491,7 +491,7 @@ export default {
             }
         },
         broadcastQuery(val) {
-            this.broadcast('AtOption', 'on-query-change', val);
+            this.broadcast('NetOption', 'on-query-change', val);
         },
     },
     mounted() {
@@ -521,7 +521,7 @@ export default {
                 this.model = value;
 
                 if (this.filterable) {
-                    const options = findComponentsDownward(this, 'AtOption');
+                    const options = findComponentsDownward(this, 'NetOption');
                     options.forEach(option => {
                         if (option.value === value) {
                             this.query = typeof option.label === 'undefined' ? option.searchLabel : option.label;

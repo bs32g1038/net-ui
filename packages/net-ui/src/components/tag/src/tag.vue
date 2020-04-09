@@ -11,7 +11,7 @@
 const colorArr = ['default', 'primary', 'success', 'error', 'warning', 'info'];
 
 export default {
-    name: 'AtTag',
+    name: 'NetTag',
     props: {
         name: {
             type: [String, Number],

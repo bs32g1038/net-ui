@@ -15,7 +15,7 @@ import Clickoutside from 'net-ui/src/directives/clickoutside';
 import PopoverMixin from 'net-ui/src/mixins/popover';
 
 export default {
-    name: 'AtDropdown',
+    name: 'NetDropdown',
     directives: { Clickoutside },
     mixins: [PopoverMixin],
     props: {

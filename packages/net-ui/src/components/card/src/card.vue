@@ -46,7 +46,7 @@
 
 <script>
 export default {
-    name: 'AtCard',
+    name: 'NetCard',
     props: {
         bordered: {
             type: Boolean,

@@ -26,7 +26,7 @@
 
 <script>
 export default {
-    name: 'AtProgress',
+    name: 'NetProgress',
     props: {
         type: {
             type: String,

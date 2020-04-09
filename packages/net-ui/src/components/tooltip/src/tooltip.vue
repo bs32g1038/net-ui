@@ -24,7 +24,7 @@
 import PopoverMixin from 'net-ui/src/mixins/popover';
 
 export default {
-    name: 'AtTooltip',
+    name: 'NetTooltip',
     mixins: [PopoverMixin],
     props: {
         trigger: {

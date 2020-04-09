@@ -11,8 +11,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "net-ui": "^1.0.0-alpha.0",
-    "net-ui-theme": "^1.0.0-alpha.0",
+    "@net-ui/core": "file:../packages/net-ui",
+    "@net-ui/theme": "file:../packages/net-ui-theme",
     "nuxt": "^2.12.1",
     "vue-router": "^3.1.6"
   },

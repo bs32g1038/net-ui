@@ -19,7 +19,7 @@
 
 <script>
 export default {
-    name: 'AtRadioButton',
+    name: 'NetRadioButton',
     props: {
         name: String,
         label: {

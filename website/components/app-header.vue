@@ -5,7 +5,7 @@
                 <div class="logo">
                     <nuxt-link :to="lang === 'en' ? '/en' : '/zh'">
                         <img class="logo-img" src="../assets/logo-at@2x.png" preload="" />
-                        <span>AT UIKIT</span>
+                        <span>NET UIKIT</span>
                     </nuxt-link>
                 </div>
                 <i class="icon icon-menu nav-icon" @click="toggleMenu"></i>

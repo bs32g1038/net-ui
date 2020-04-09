@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: 'AtSteps',
+    name: 'NetSteps',
     props: {
         current: {
             type: Number,

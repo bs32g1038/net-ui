@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'AtLoadingBar',
+    name: 'NetLoadingBar',
     data() {
         return {
             show: false,

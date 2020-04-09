@@ -18,7 +18,7 @@ import Emitter from 'net-ui/src/mixins/emitter';
 import { findComponentsUpward } from 'net-ui/src/utils/util';
 
 export default {
-    name: 'AtMenuItem',
+    name: 'NetMenuItem',
     mixins: [Emitter],
     props: {
         name: {
@@ -48,14 +48,14 @@ export default {
         handleClick(evt) {
             evt.preventDefault();
             if (this.disabled) return;
-            const parents = findComponentsUpward(this, 'AtSubmenu');
+            const parents = findComponentsUpward(this, 'NetSubmenu');
 
             if (parents && parents.length) {
                 parents.forEach(parent => {
                     parent.$emit('on-menu-item-select', this);
                 });
             } else {
-                this.dispatch('AtMenu', 'on-menu-item-select', this);
+                this.dispatch('NetMenu', 'on-menu-item-select', this);
             }
         },
     },
@@ -68,7 +68,7 @@ export default {
                 ) {
                     this.active = true;
 
-                    const parents = findComponentsUpward(this, 'AtSubmenu');
+                    const parents = findComponentsUpward(this, 'NetSubmenu');
                     if (parents && parents.length) {
                         parents.forEach(parent => {
                             parent.$emit('on-update-active', true);

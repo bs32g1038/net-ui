@@ -86,7 +86,7 @@
 
 <script>
 export default {
-    name: 'AtTabs',
+    name: 'NetTabs',
     props: {
         value: {
             type: String,
@@ -214,7 +214,7 @@ export default {
             this.navStyle.transform = `translate3d(-${this.navOffset}px, 0, 0)`;
         },
         getTabs() {
-            return this.$children.filter(item => item.$options.name === 'AtTabPane');
+            return this.$children.filter(item => item.$options.name === 'NetTabPane');
         },
         removeHandle(index) {
             const tabs = this.getTabs();

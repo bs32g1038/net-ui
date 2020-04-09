@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'AtBreadcrumbItem',
+    name: 'NetBreadcrumbItem',
     props: {
         href: String,
         to: {

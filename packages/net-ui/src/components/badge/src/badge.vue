@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'AtBadge',
+    name: 'NetBadge',
     props: {
         value: {
             type: [String, Number],

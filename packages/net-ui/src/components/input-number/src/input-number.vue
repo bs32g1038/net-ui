@@ -57,7 +57,7 @@
 import Emitter from 'net-ui/src/mixins/emitter';
 
 export default {
-    name: 'AtInputNumber',
+    name: 'NetInputNumber',
     mixins: [Emitter],
     props: {
         value: {
@@ -137,7 +137,7 @@ export default {
 
             this.currentValue = value;
             this.$emit('change', value);
-            this.dispatch('AtFormItem', 'on-form-item-change', value);
+            this.dispatch('NetFormItem', 'on-form-item-change', value);
         },
         calculateNumber(num, stepNum, symbol) {
             let decimal1, decimal2;

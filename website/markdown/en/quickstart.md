@@ -35,9 +35,9 @@ Import all components or required components in the entry file of the project.
 ```js
 import Vue from 'vue'
 import AtComponents from 'net-ui'
-import 'net-ui-theme'    // Import CSS
+import '@net-ui/theme'    // Import CSS
 
-// import 'net-ui-theme/src/index.scss'      // Or import the unbuilt version of SCSS
+// import '@net-ui/theme/src/index.scss'      // Or import the unbuilt version of SCSS
 
 Vue.use(AtComponents)
 ```
@@ -157,4 +157,4 @@ Vue.prototype.$Message = Message
 
 ## Customize Theme
 
-The style of `AT-UI` is independent to a separate project [AT-UI-Style](https://github.com/net-ui/net-ui-theme), The variables for each component are stored in the file `net-ui-theme/src/variables/default.scss`. User can customize the style of components according to actual needs.
+The style of `AT-UI` is independent to a separate project [AT-UI-Style](https://github.com/net-ui/@net-ui/theme), The variables for each component are stored in the file `@net-ui/theme/src/variables/default.scss`. User can customize the style of components according to actual needs.

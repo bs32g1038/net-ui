@@ -9,7 +9,7 @@
 ```bash
 npm install net-ui
 
-npm install net-ui-theme
+npm install @net-ui/theme
 ```
 
 ## 浏览器标签引入
@@ -30,7 +30,7 @@ npm install net-ui-theme
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>AT-UI Example</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/net-ui-theme/css/at.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@net-ui/theme/css/at.min.css">
   <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/net-ui/dist/at.min.js"></script>
   <style>
