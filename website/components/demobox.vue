@@ -1,10 +1,10 @@
 <template>
-    <div class="net-component__container">
-        <div class="net-component__sample">
+    <div class="at-component__container">
+        <div class="at-component__sample">
             <slot name="demo"></slot>
         </div>
         <collapse-transition>
-            <div class="net-component__code" v-show="isShow">
+            <div class="at-component__code" v-show="isShow">
                 <slot name="source-code"></slot>
                 <span
                     class="btn-copy"
@@ -18,15 +18,15 @@
                 ></span>
             </div>
         </collapse-transition>
-        <a v-if="lang === 'en'" class="net-component__code-toggle" @click="isShow = !isShow">{{
+        <a v-if="lang === 'en'" class="at-component__code-toggle" @click="isShow = !isShow">{{
             isShow ? 'Hide Code' : 'Show Code'
         }}</a>
-        <a v-else class="net-component__code-toggle" @click="isShow = !isShow">{{ isShow ? '隐藏代码' : '显示代码' }}</a>
+        <a v-else class="at-component__code-toggle" @click="isShow = !isShow">{{ isShow ? '隐藏代码' : '显示代码' }}</a>
     </div>
 </template>
 
 <script>
-import CollapseTransition from 'src/utils/collapse-transition';
+import CollapseTransition from '../utils/collapse-transition';
 
 export default {
     components: {
@@ -64,7 +64,7 @@ export default {
         cursor: pointer;
     }
 }
-.net-component__code:hover {
+.at-component__code:hover {
     .btn-copy {
         display: block;
         animation: fadeIn 0.3s both;

@@ -4,7 +4,7 @@
         <div class="at-container row">
             <sidebar :data="navs"></sidebar>
             <div class="at-markdown col-sm-24 col-md-18 col-lg-20">
-                <nuxt></nuxt>
+                <nuxt />
             </div>
         </div>
         <m-footer></m-footer>

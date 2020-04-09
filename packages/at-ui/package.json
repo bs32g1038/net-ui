@@ -3,18 +3,13 @@
   "version": "1.0.0-alpha.0",
   "description": "A UI Component Library with Vue.js",
   "homepage": "https://at.aotu.io",
-  "main": "dist/at.js",
+  "main": "dist/at.umd.js",
   "engines": {
     "node": ">=6"
   },
   "scripts": {
-    "dev": "node build/dev-server",
-    "lint": "eslint --ext .js,.vue src docs build --ignore-pattern src/stylesheet test/unit/specs test/e2e/specs",
-    "dist": "npm run build:locale && npm run build:component && npm run build:doc",
-    "build:doc": "webpack --config build/webpack.prod.conf.js -p",
-    "build:component": "node build/component",
-    "build:locale": "node build/locale",
-    "prepublish": "npm run build:locale && npm run build:component"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name at src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +17,15 @@
   },
   "bugs": {
     "url": "https://github.com/at-ui/at-ui/issues"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "keywords": [
     "at",
@@ -32,7 +36,6 @@
     "component"
   ],
   "files": [
-    "dist/locale",
     "dist/at.js",
     "dist/at.min.js",
     "src"

@@ -1,4 +1,36 @@
 const path = require('path');
+const markdownItContainer = require('markdown-it-container');
+const striptags = require('./build/strip-tags');
+const utils = require('./build/utils');
+
+let markdownIt = require('@vuepress/markdown')({
+    plugins: [
+        [
+            (md, options) => markdownItContainer(md, 'demo', options),
+            {
+                validate: params => params.trim().match(/^demo\s*(.*)$/),
+                render: (tokens, idx) => {
+                    // console.log(tokens, idx)
+                    if (tokens[idx].nesting === 1) {
+                        const html = utils.convertHtml(striptags(tokens[idx + 1].content, 'script'));
+
+                        return `<demo-box>
+                                <div slot="demo">${html}</div>
+                                <div slot="source-code">`;
+                    }
+
+                    // closing tag
+                    return '</div></demo-box>';
+                },
+            },
+        ],
+    ],
+});
+
+markdownIt.renderer.rules.table_open = function () {
+    return '<table class="table">';
+};
+markdownIt.renderer.rules.fence = utils.wrapCustomClass(markdownIt.renderer.rules.fence);
 
 export default {
     mode: 'universal',
@@ -12,7 +44,7 @@ export default {
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '~@/assets/logo-at@2x.png' }],
     },
     /*
      ** Customize the progress-bar color
@@ -37,6 +69,7 @@ export default {
     /*
      ** Build configuration
      */
+    
     build: {
         /*
          ** You can extend webpack config here
@@ -53,12 +86,13 @@ export default {
                     {
                         loader: '@vuepress/markdown-loader',
                         options: {
-                            content: 'test',
+                            markdown: markdownIt,
                             sourceDir: __dirname + '/markdown',
                         },
                     },
                 ],
             });
+            return config;
         },
     },
 };
