@@ -1,6 +1,6 @@
 {
   "name": "@net-ui/theme",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "The StyleSheet for NET-UI",
   "scss": "src/index.scss",
   "main": "dist/net.css",
