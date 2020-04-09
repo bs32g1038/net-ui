@@ -1,6 +1,6 @@
 {
   "name": "@net-ui/core",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.1-alpha.0",
   "description": "A UI Component Library with Vue.js",
   "homepage": "https://net-ui.lizc.net",
   "main": "dist/net.umd.js",
