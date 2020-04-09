@@ -18,10 +18,10 @@
 我们提供了一个模板工程，可通过 `vue-cli` 工具初始化模板项目，快速搭建单页应用
 
 ```shell
-vue init at-ui/at-template my-project
+vue init net-ui/net-template my-project
 ```
 
-如果不想使用 `vue-cli` 工具，我们也同样提供了可直接使用的模板工程：[at-webpack-boilerplate](https://github.com/at-ui/at-webpack-boilerplate)
+如果不想使用 `vue-cli` 工具，我们也同样提供了可直接使用的模板工程：[net-webpack-boilerplate](https://github.com/net-ui/net-webpack-boilerplate)
 
 ## 标准开发
 
@@ -33,10 +33,10 @@ vue init at-ui/at-template my-project
 
 ```js
 import Vue from 'vue'
-import AtComponents from 'at-ui'
-import 'at-ui-style'    // 引入组件样式
+import AtComponents from 'net-ui'
+import 'net-ui-theme'    // 引入组件样式
 
-// import 'at-ui-style/src/index.scss'      // 或者引入未构建版本的 scss 样式
+// import 'net-ui-theme/src/index.scss'      // 或者引入未构建版本的 scss 样式
 
 Vue.use(AtComponents)
 ```
@@ -73,7 +73,7 @@ npm install babel-plugin-component
 接下来引入你需要用的组件
 
 ```js
-import { Input as AtInput } from 'at-ui'
+import { Input as AtInput } from 'net-ui'
 
 export default {
   components: {
@@ -87,12 +87,12 @@ export default {
 }
 ```
 
-在模板中，用 `<at-input></at-input>` 自定义标签的方式使用组件，并且可用 `v-model` 语法实现数据的动态绑定
+在模板中，用 `<net-input></net-input>` 自定义标签的方式使用组件，并且可用 `v-model` 语法实现数据的动态绑定
 
 ```html
 <template>
   <div>
-    <at-input v-model="value" placeholder="请输入..."></at-input>
+    <net-input v-model="value" placeholder="请输入..."></net-input>
   </div>
 </template>
 ```
@@ -146,7 +146,7 @@ import {
   TabPane,
   Timeline,
   TimelineItem
-} from 'at-ui'
+} from 'net-ui'
 
 Vue.prototype.$Notify = Notification
 Vue.prototype.$Loading = LoadingBar
@@ -156,4 +156,4 @@ Vue.prototype.$Message = Message
 
 ## 自定义主题
 
-`AT-UI` 的样式已抽离成单独的项目 [AT-UI-Style](https://github.com/at-ui/at-ui-style)，各个组件的样式变量都存放在 `at-ui-style/src/variables/default.scss` 文件中。用户可根据实际需要，自定义组件的样式
+`AT-UI` 的样式已抽离成单独的项目 [AT-UI-Style](https://github.com/net-ui/net-ui-theme)，各个组件的样式变量都存放在 `net-ui-theme/src/variables/default.scss` 文件中。用户可根据实际需要，自定义组件的样式

@@ -12,10 +12,10 @@
 
 :::demo
 ```html
-<at-alert message="这里是提示的文案~这里是提示的文案~这里是提示的文案~" type="success"></at-alert>
-<at-alert message="这里是提示的文案~" type="error"></at-alert>
-<at-alert message="这里是提示的文案~" type="warning"></at-alert>
-<at-alert message="这里是提示的文案~" type="info"></at-alert>
+<net-alert message="这里是提示的文案~这里是提示的文案~这里是提示的文案~" type="success"></net-alert>
+<net-alert message="这里是提示的文案~" type="error"></net-alert>
+<net-alert message="这里是提示的文案~" type="warning"></net-alert>
+<net-alert message="这里是提示的文案~" type="info"></net-alert>
 ```
 :::
 
@@ -26,7 +26,7 @@
 
 :::demo
 ```html
-<at-alert message="这里是不可关闭的警告提示" closable></at-alert>
+<net-alert message="这里是不可关闭的警告提示" closable></net-alert>
 ```
 :::
 
@@ -37,7 +37,7 @@
 
 :::demo
 ```html
-<at-alert message="这里是自定义关闭按钮的警告提示" close-text="关闭"></at-alert>
+<net-alert message="这里是自定义关闭按钮的警告提示" close-text="关闭"></net-alert>
 ```
 :::
 
@@ -48,7 +48,7 @@
 
 :::demo
 ```html
-<at-alert message="显示 ICON 的警告提示" show-icon></at-alert>
+<net-alert message="显示 ICON 的警告提示" show-icon></net-alert>
 ```
 :::
 
@@ -59,10 +59,10 @@
 
 :::demo
 ```html
-<at-alert message="成功提示的标题" description="成功提示的详细说明成功提示的详细说明成功提示的详细说明" type="success" closable></at-alert>
-<at-alert message="错误提示的标题" description="错误提示的详细说明错误提示的详细说明错误提示的详细说明" type="error" closable></at-alert>
-<at-alert message="警告提示的标题" description="警告提示的详细说明警告提示的详细说明警告提示的详细说明" type="warning" closable></at-alert>
-<at-alert message="信息提示的标题" description="信息提示的详细说明信息提示的详细说明信息提示的详细说明" type="info" closable></at-alert>
+<net-alert message="成功提示的标题" description="成功提示的详细说明成功提示的详细说明成功提示的详细说明" type="success" closable></net-alert>
+<net-alert message="错误提示的标题" description="错误提示的详细说明错误提示的详细说明错误提示的详细说明" type="error" closable></net-alert>
+<net-alert message="警告提示的标题" description="警告提示的详细说明警告提示的详细说明警告提示的详细说明" type="warning" closable></net-alert>
+<net-alert message="信息提示的标题" description="信息提示的详细说明信息提示的详细说明信息提示的详细说明" type="info" closable></net-alert>
 ```
 :::
 
@@ -73,10 +73,10 @@
 
 :::demo
 ```html
-<at-alert message="成功提示的标题" description="成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明" type="success" show-icon closable></at-alert>
-<at-alert message="错误提示的标题" description="错误提示的详细说明错误提示的详细说明错误提示的详细说明" type="error" show-icon closable></at-alert>
-<at-alert message="警告提示的标题" description="警告提示的详细说明警告提示的详细说明警告提示的详细说明" type="warning" show-icon closable></at-alert>
-<at-alert message="信息提示的标题" description="信息提示的详细说明信息提示的详细说明信息提示的详细说明" type="info" show-icon closable></at-alert>
+<net-alert message="成功提示的标题" description="成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明成功提示的详细说明" type="success" show-icon closable></net-alert>
+<net-alert message="错误提示的标题" description="错误提示的详细说明错误提示的详细说明错误提示的详细说明" type="error" show-icon closable></net-alert>
+<net-alert message="警告提示的标题" description="警告提示的详细说明警告提示的详细说明警告提示的详细说明" type="warning" show-icon closable></net-alert>
+<net-alert message="信息提示的标题" description="信息提示的详细说明信息提示的详细说明信息提示的详细说明" type="info" show-icon closable></net-alert>
 ```
 :::
 
@@ -102,7 +102,7 @@
 
 
 <style lang="scss" scoped>
-.at-alert + .at-alert {
+.net-alert + .net-alert {
   margin-top: 8px;
 }
 </style>

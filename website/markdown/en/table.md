@@ -9,7 +9,7 @@ Basic Usage
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data1"></at-table>
+<net-table :columns="columns1" :data="data1"></net-table>
 
 <script>
   export default {
@@ -89,7 +89,7 @@ Set `stripe` property to apply stripe style. Used to distinguish between differe
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data1" stripe></at-table>
+<net-table :columns="columns1" :data="data1" stripe></net-table>
 
 <script>
   export default {
@@ -169,7 +169,7 @@ Defaults to no column borders, set `border` property to add borders.
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data1" border></at-table>
+<net-table :columns="columns1" :data="data1" border></net-table>
 
 <script>
   export default {
@@ -249,7 +249,7 @@ Set `height` property to fix the height of Table. It'll make the header fixed on
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data1" height="220"></at-table>
+<net-table :columns="columns1" :data="data1" height="220"></net-table>
 
 <script>
   export default {
@@ -329,7 +329,7 @@ Set `optional` property to apply multi-choices function. `on-selection-change` e
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data2" optional></at-table>
+<net-table :columns="columns1" :data="data2" optional></net-table>
 
 <script>
   export default {
@@ -386,7 +386,7 @@ There are three type of `sortType`: `normal (No sort)`, `desc (Descending)`, `as
 
 :::demo
 ```html
-<at-table :columns="columns2" :data="data2"></at-table>
+<net-table :columns="columns2" :data="data2"></net-table>
 
 <script>
   export default {
@@ -444,7 +444,7 @@ You can render the column by setting `render` to certain columns prop's items. I
 
 :::demo
 ```html
-<at-table :columns="columns3" :data="data2" sort></at-table>
+<net-table :columns="columns3" :data="data2" sort></net-table>
 
 <script>
   export default {
@@ -532,9 +532,9 @@ There are three type of size: `small`, `normal`, `large`. Default is `normal`.
 
 :::demo
 ```html
-<at-table :columns="columns3" :data="data2" size="large" sort></at-table>
+<net-table :columns="columns3" :data="data2" size="large" sort></net-table>
 
-<at-table style="margin-top: 24px;" :columns="columns4" :data="data2" size="small" sort></at-table>
+<net-table style="margin-top: 24px;" :columns="columns4" :data="data2" size="small" sort></net-table>
 
 <script>
   export default {
@@ -669,7 +669,7 @@ Set `pagination` to apply pagination function.
 
 :::demo
 ```html
-<at-table :columns="columns2" :data="data3" pagination></at-table>
+<net-table :columns="columns2" :data="data3" pagination></net-table>
 
 <script>
   export default {

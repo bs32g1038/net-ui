@@ -7,15 +7,15 @@
 
 ## 基础用法
 
-使用 `at-breadcrumb` 和 `at-breadcrumb-item` 创建面包屑，使用 `href` 属性添加链接
+使用 `net-breadcrumb` 和 `net-breadcrumb-item` 创建面包屑，使用 `href` 属性添加链接
 
 :::demo
 ```html
-<at-breadcrumb>
-  <at-breadcrumb-item>Home</at-breadcrumb-item>
-  <at-breadcrumb-item href="#/zh/docs/introduction">Components</at-breadcrumb-item>
-  <at-breadcrumb-item>Breadcrumb</at-breadcrumb-item>
-</at-breadcrumb>
+<net-breadcrumb>
+  <net-breadcrumb-item>Home</net-breadcrumb-item>
+  <net-breadcrumb-item href="#/zh/docs/introduction">Components</net-breadcrumb-item>
+  <net-breadcrumb-item>Breadcrumb</net-breadcrumb-item>
+</net-breadcrumb>
 ```
 :::
 
@@ -25,12 +25,12 @@
 
 :::demo
 ```html
-<at-breadcrumb>
-  <at-breadcrumb-item>Home</at-breadcrumb-item>
-  <at-breadcrumb-item :to="{ name: 'Layout-zh' }">Layout</at-breadcrumb-item>
-  <at-breadcrumb-item :to="{ name: 'Color-zh' }" replace>Color</at-breadcrumb-item>
-  <at-breadcrumb-item>Breadcrumb</at-breadcrumb-item>
-</at-breadcrumb>
+<net-breadcrumb>
+  <net-breadcrumb-item>Home</net-breadcrumb-item>
+  <net-breadcrumb-item :to="{ name: 'Layout-zh' }">Layout</net-breadcrumb-item>
+  <net-breadcrumb-item :to="{ name: 'Color-zh' }" replace>Color</net-breadcrumb-item>
+  <net-breadcrumb-item>Breadcrumb</net-breadcrumb-item>
+</net-breadcrumb>
 ```
 :::
 
@@ -40,11 +40,11 @@
 
 :::demo
 ```html
-<at-breadcrumb separator=">">
-  <at-breadcrumb-item>Home</at-breadcrumb-item>
-  <at-breadcrumb-item href="#/zh/docs/introduction">Components</at-breadcrumb-item>
-  <at-breadcrumb-item>Breadcrumb</at-breadcrumb-item>
-</at-breadcrumb>
+<net-breadcrumb separator=">">
+  <net-breadcrumb-item>Home</net-breadcrumb-item>
+  <net-breadcrumb-item href="#/zh/docs/introduction">Components</net-breadcrumb-item>
+  <net-breadcrumb-item>Breadcrumb</net-breadcrumb-item>
+</net-breadcrumb>
 ```
 :::
 

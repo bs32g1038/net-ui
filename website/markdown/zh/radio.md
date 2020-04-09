@@ -8,8 +8,8 @@
 
 :::demo
 ```html
-<at-radio v-model="radio" label="1">选项一</at-radio>
-<at-radio v-model="radio" label="2">选项二</at-radio>
+<net-radio v-model="radio" label="1">选项一</net-radio>
+<net-radio v-model="radio" label="2">选项二</net-radio>
 ```
 :::
 
@@ -19,8 +19,8 @@
 
 :::demo
 ```html
-<at-radio v-model="radio2" label="3" disabled>不可点且未选中</at-radio>
-<at-radio v-model="radio2" label="4" disabled>不可点且选中</at-radio>
+<net-radio v-model="radio2" label="3" disabled>不可点且未选中</net-radio>
+<net-radio v-model="radio2" label="4" disabled>不可点且选中</net-radio>
 ```
 :::
 
@@ -30,11 +30,11 @@
 
 ::: demo
 ```html
-<at-radio-group v-model="radio3">
-  <at-radio label="1">选项一</at-radio>
-  <at-radio label="2">选项二</at-radio>
-  <at-radio label="3">选项三</at-radio>
-</at-radio-group>
+<net-radio-group v-model="radio3">
+  <net-radio label="1">选项一</net-radio>
+  <net-radio label="2">选项二</net-radio>
+  <net-radio label="3">选项三</net-radio>
+</net-radio-group>
 ```
 :::
 
@@ -45,12 +45,12 @@
 
 :::demo
 ```html
-<at-radio-group v-model="radio4">
-  <at-radio-button label="北京">北京</at-radio-button>
-  <at-radio-button label="上海" disabled>上海</at-radio-button>
-  <at-radio-button label="深圳">深圳</at-radio-button>
-  <at-radio-button label="凹凸实验室">凹凸实验室</at-radio-button>
-</at-radio-group>
+<net-radio-group v-model="radio4">
+  <net-radio-button label="北京">北京</net-radio-button>
+  <net-radio-button label="上海" disabled>上海</net-radio-button>
+  <net-radio-button label="深圳">深圳</net-radio-button>
+  <net-radio-button label="凹凸实验室">凹凸实验室</net-radio-button>
+</net-radio-group>
 ```
 :::
 
@@ -62,21 +62,21 @@
 ```html
 <p class="demo-desc">更换背景色</p>
 <div class="row">
-  <at-radio-group v-model="radio5" fill="#FF6464">
-    <at-radio-button label="北京">北京</at-radio-button>
-    <at-radio-button label="上海" disabled>上海</at-radio-button>
-    <at-radio-button label="深圳">深圳</at-radio-button>
-    <at-radio-button label="凹凸实验室">凹凸实验室</at-radio-button>
-  </at-radio-group>
+  <net-radio-group v-model="radio5" fill="#FF6464">
+    <net-radio-button label="北京">北京</net-radio-button>
+    <net-radio-button label="上海" disabled>上海</net-radio-button>
+    <net-radio-button label="深圳">深圳</net-radio-button>
+    <net-radio-button label="凹凸实验室">凹凸实验室</net-radio-button>
+  </net-radio-group>
 </div>
 <p class="demo-desc">更换字体颜色</p>
 <div class="row">
-  <at-radio-group v-model="radio5" text-color="#4C5D73">
-    <at-radio-button label="北京">北京</at-radio-button>
-    <at-radio-button label="上海" disabled>上海</at-radio-button>
-    <at-radio-button label="深圳">深圳</at-radio-button>
-    <at-radio-button label="凹凸实验室">凹凸实验室</at-radio-button>
-  </at-radio-group>
+  <net-radio-group v-model="radio5" text-color="#4C5D73">
+    <net-radio-button label="北京">北京</net-radio-button>
+    <net-radio-button label="上海" disabled>上海</net-radio-button>
+    <net-radio-button label="深圳">深圳</net-radio-button>
+    <net-radio-button label="凹凸实验室">凹凸实验室</net-radio-button>
+  </net-radio-group>
 </div>
 ```
 :::
@@ -88,28 +88,28 @@
 :::demo
 ```html
 <div class="row">
-  <at-radio-group v-model="radio6" size="large">
-    <at-radio-button label="北京">北京</at-radio-button>
-    <at-radio-button label="上海" disabled>上海</at-radio-button>
-    <at-radio-button label="深圳">深圳</at-radio-button>
-    <at-radio-button label="凹凸实验室">凹凸实验室</at-radio-button>
-  </at-radio-group>
+  <net-radio-group v-model="radio6" size="large">
+    <net-radio-button label="北京">北京</net-radio-button>
+    <net-radio-button label="上海" disabled>上海</net-radio-button>
+    <net-radio-button label="深圳">深圳</net-radio-button>
+    <net-radio-button label="凹凸实验室">凹凸实验室</net-radio-button>
+  </net-radio-group>
 </div>
 <div class="row">
-  <at-radio-group v-model="radio6" size="normal">
-    <at-radio-button label="北京">北京</at-radio-button>
-    <at-radio-button label="上海" disabled>上海</at-radio-button>
-    <at-radio-button label="深圳">深圳</at-radio-button>
-    <at-radio-button label="凹凸实验室">凹凸实验室</at-radio-button>
-  </at-radio-group>
+  <net-radio-group v-model="radio6" size="normal">
+    <net-radio-button label="北京">北京</net-radio-button>
+    <net-radio-button label="上海" disabled>上海</net-radio-button>
+    <net-radio-button label="深圳">深圳</net-radio-button>
+    <net-radio-button label="凹凸实验室">凹凸实验室</net-radio-button>
+  </net-radio-group>
 </div>
 <div class="row">
-  <at-radio-group v-model="radio6" size="small">
-    <at-radio-button label="北京">北京</at-radio-button>
-    <at-radio-button label="上海" disabled>上海</at-radio-button>
-    <at-radio-button label="深圳">深圳</at-radio-button>
-    <at-radio-button label="凹凸实验室">凹凸实验室</at-radio-button>
-  </at-radio-group>
+  <net-radio-group v-model="radio6" size="small">
+    <net-radio-button label="北京">北京</net-radio-button>
+    <net-radio-button label="上海" disabled>上海</net-radio-button>
+    <net-radio-button label="深圳">深圳</net-radio-button>
+    <net-radio-button label="凹凸实验室">凹凸实验室</net-radio-button>
+  </net-radio-group>
 </div>
 ```
 :::

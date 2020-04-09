@@ -9,23 +9,23 @@ To make a select as disabled, add `disabled` property to the Select.
 
 :::demo
 ```html
-<at-select v-model="model1" style="width:100px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou~Guangzhou~Guangzhou</at-option>
-  <at-option value="3">Shanghai</at-option>
-  <at-option value="4">Beijing</at-option>
-  <at-option value="5">chengdu</at-option>
-</at-select>
+<net-select v-model="model1" style="width:100px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou~Guangzhou~Guangzhou</net-option>
+  <net-option value="3">Shanghai</net-option>
+  <net-option value="4">Beijing</net-option>
+  <net-option value="5">chengdu</net-option>
+</net-select>
 
-<at-select v-model="model2" style="width:100px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou</at-option>
-</at-select>
+<net-select v-model="model2" style="width:100px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou</net-option>
+</net-select>
 
-<at-select v-model="model2" disabled style="width:100px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou</at-option>
-</at-select>
+<net-select v-model="model2" disabled style="width:100px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou</net-option>
+</net-select>
 ```
 :::
 
@@ -36,27 +36,27 @@ There are three sizes of a Select: `large`，`normal`，`small`.
 
 :::demo
 ```html
-<at-select v-model="model3" size="small" style="width: 100px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou</at-option>
-  <at-option value="3">Shanghai</at-option>
-  <at-option value="4">Beijing</at-option>
-  <at-option value="5">chengdu</at-option>
-</at-select>
-<at-select v-model="model3" size="normal" style="width: 100px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou</at-option>
-  <at-option value="3">Shanghai</at-option>
-  <at-option value="4">Beijing</at-option>
-  <at-option value="5">chengdu</at-option>
-</at-select>
-<at-select v-model="model3" size="large" style="width: 100px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou</at-option>
-  <at-option value="3">Shanghai</at-option>
-  <at-option value="4">Beijing</at-option>
-  <at-option value="5">chengdu</at-option>
-</at-select>
+<net-select v-model="model3" size="small" style="width: 100px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou</net-option>
+  <net-option value="3">Shanghai</net-option>
+  <net-option value="4">Beijing</net-option>
+  <net-option value="5">chengdu</net-option>
+</net-select>
+<net-select v-model="model3" size="normal" style="width: 100px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou</net-option>
+  <net-option value="3">Shanghai</net-option>
+  <net-option value="4">Beijing</net-option>
+  <net-option value="5">chengdu</net-option>
+</net-select>
+<net-select v-model="model3" size="large" style="width: 100px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou</net-option>
+  <net-option value="3">Shanghai</net-option>
+  <net-option value="4">Beijing</net-option>
+  <net-option value="5">chengdu</net-option>
+</net-select>
 ```
 :::
 
@@ -67,13 +67,13 @@ Set `clearable` property to give Select Button the ability to empty options, onl
 
 :::demo
 ```html
-<at-select v-model="model4" clearable size="large" style="width: 100px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou</at-option>
-  <at-option value="3">Shanghai</at-option>
-  <at-option value="4">Beijing</at-option>
-  <at-option value="5">chengdu</at-option>
-</at-select>
+<net-select v-model="model4" clearable size="large" style="width: 100px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou</net-option>
+  <net-option value="3">Shanghai</net-option>
+  <net-option value="4">Beijing</net-option>
+  <net-option value="5">chengdu</net-option>
+</net-select>
 ```
 :::
 
@@ -84,20 +84,20 @@ Options can be grouped by `OptionGroup` component, and the name of the group can
 
 :::demo
 ```html
-<at-select v-model="model5" style="width: 100px">
-  <at-option-group label="Guangdong">
-    <at-option value="1">Shenzhen</at-option>
-    <at-option value="2">Guangzhou</at-option>
-    <at-option value="3">zhuhai</at-option>
-  </at-option-group>
-  <at-option-group label="Other">
-    <at-option value="4">Shanghai</at-option>
-    <at-option value="5">Beijing</at-option>
-    <at-option value="6" disabled>chengdu</at-option>
-    <at-option value="7">kunming</at-option>
-    <at-option value="8">hangzhou</at-option>
-  </at-option-group>
-</at-select>
+<net-select v-model="model5" style="width: 100px">
+  <net-option-group label="Guangdong">
+    <net-option value="1">Shenzhen</net-option>
+    <net-option value="2">Guangzhou</net-option>
+    <net-option value="3">zhuhai</net-option>
+  </net-option-group>
+  <net-option-group label="Other">
+    <net-option value="4">Shanghai</net-option>
+    <net-option value="5">Beijing</net-option>
+    <net-option value="6" disabled>chengdu</net-option>
+    <net-option value="7">kunming</net-option>
+    <net-option value="8">hangzhou</net-option>
+  </net-option-group>
+</net-select>
 ```
 :::
 
@@ -108,13 +108,13 @@ Customize the option content. When using label property in Option, the option wi
 
 :::demo
 ```html
-<at-select v-model="model6" style="width: 140px">
-  <at-option value="1" label="Shenzhen"><span>Shenzhen</span><span style="float: right;opacity: .6;font-size: 0.8em;">Shenzhen</span></at-option>
-  <at-option value="2" label="Guangzhou"><span>Guangzhou</span><span style="float: right;opacity: .6;font-size: 0.8em;">Guangzhou</span></at-option>
-  <at-option value="3" label="Shanghai"><span>Shanghai</span><span style="float: right;opacity: .6;font-size: 0.8em;">Shanghai</span></at-option>
-  <at-option value="4" label="Beijing"><span>Beijing</span><span style="float: right;opacity: .6;font-size: 0.8em;">Beijin</span></at-option>
-  <at-option value="5" label="chengdu"><span>chengdu</span><span style="float: right;opacity: .6;font-size: 0.8em;">Chengdu</span></at-option>
-</at-select>
+<net-select v-model="model6" style="width: 140px">
+  <net-option value="1" label="Shenzhen"><span>Shenzhen</span><span style="float: right;opacity: .6;font-size: 0.8em;">Shenzhen</span></net-option>
+  <net-option value="2" label="Guangzhou"><span>Guangzhou</span><span style="float: right;opacity: .6;font-size: 0.8em;">Guangzhou</span></net-option>
+  <net-option value="3" label="Shanghai"><span>Shanghai</span><span style="float: right;opacity: .6;font-size: 0.8em;">Shanghai</span></net-option>
+  <net-option value="4" label="Beijing"><span>Beijing</span><span style="float: right;opacity: .6;font-size: 0.8em;">Beijin</span></net-option>
+  <net-option value="5" label="chengdu"><span>chengdu</span><span style="float: right;opacity: .6;font-size: 0.8em;">Chengdu</span></net-option>
+</net-select>
 ```
 :::
 
@@ -125,13 +125,13 @@ Add `multiple` property can support multiple select. In the multiple mode, model
 
 :::demo
 ```html
-<at-select v-model="model7" multiple style="width: 240px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou</at-option>
-  <at-option value="3">Shanghai</at-option>
-  <at-option value="4">Beijing</at-option>
-  <at-option value="5">chengdu</at-option>
-</at-select>
+<net-select v-model="model7" multiple style="width: 240px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou</net-option>
+  <net-option value="3">Shanghai</net-option>
+  <net-option value="4">Beijing</net-option>
+  <net-option value="5">chengdu</net-option>
+</net-select>
 ```
 :::
 
@@ -142,16 +142,16 @@ To set search mode, add `filterable` property to the Select.
 
 :::demo
 ```html
-<at-select v-model="model8" filterable size="large" style="width: 240px">
-  <at-option value="1">Shenzhen</at-option>
-  <at-option value="2">Guangzhou</at-option>
-  <at-option value="3">Shanghai</at-option>
-  <at-option value="4">Beijing</at-option>
-  <at-option value="5">chengdu</at-option>
-  <at-option value="6">xiameng</at-option>
-  <at-option value="7">kunming</at-option>
-  <at-option value="8">hangzhou</at-option>
-</at-select>
+<net-select v-model="model8" filterable size="large" style="width: 240px">
+  <net-option value="1">Shenzhen</net-option>
+  <net-option value="2">Guangzhou</net-option>
+  <net-option value="3">Shanghai</net-option>
+  <net-option value="4">Beijing</net-option>
+  <net-option value="5">chengdu</net-option>
+  <net-option value="6">xiameng</net-option>
+  <net-option value="7">kunming</net-option>
+  <net-option value="8">hangzhou</net-option>
+</net-select>
 ```
 :::
 

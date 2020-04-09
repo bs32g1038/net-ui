@@ -11,7 +11,7 @@ The textarea is fixed as two lines default, similear to the `AtInput` component.
 
 :::demo
 ```html
-<at-textarea v-model="inputValue" placeholder="Please input..."></at-textarea>
+<net-textarea v-model="inputValue" placeholder="Please input..."></net-textarea>
 ```
 :::
 
@@ -21,7 +21,7 @@ To make textarea as disabled, add `disabled` property to the Textarea.
 
 :::demo
 ```html
-<at-textarea v-model="inputValue" placeholder="Please input..." disabled></at-textarea>
+<net-textarea v-model="inputValue" placeholder="Please input..." disabled></net-textarea>
 ```
 :::
 
@@ -32,7 +32,7 @@ Automatically adjusted the height of textarea according to the number of lines. 
 :::demo
 ```html
 <p class="demo-desc">minRows=2, maxRows=4</p>
-<at-textarea v-model="inputValue2" min-rows="2" max-rows="4" placeholder="Please input multiline text..."></at-textarea>
+<net-textarea v-model="inputValue2" min-rows="2" max-rows="4" placeholder="Please input multiline text..."></net-textarea>
 ```
 :::
 
@@ -42,7 +42,7 @@ Automatically adjusted the height of textarea according to the number of lines w
 
 :::demo
 ```html
-<at-textarea v-model="inputValue3" autosize placeholder="Please input multiline text..."></at-textarea>
+<net-textarea v-model="inputValue3" autosize placeholder="Please input multiline text..."></net-textarea>
 ```
 :::
 
@@ -71,8 +71,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .at-textarea {
-    & + .at-textarea {
+  .net-textarea {
+    & + .net-textarea {
       margin-top: 15px;
     }
   }

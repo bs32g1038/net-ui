@@ -9,7 +9,7 @@
 
 :::demo
 ```html
-<at-checkbox v-model="checkboxValue1" label="深圳">深圳</at-checkbox>
+<net-checkbox v-model="checkboxValue1" label="深圳">深圳</net-checkbox>
 <p class="demo-desc">{{ checkboxValue1 }}</p>
 ```
 :::
@@ -20,8 +20,8 @@
 
 :::demo
 ```html
-<at-checkbox v-model="checkboxValue2" label="深圳" disabled>深圳</at-checkbox>
-<at-checkbox v-model="checkboxValue3" label="凹凸实验室" disabled checked>凹凸实验室</at-checkbox>
+<net-checkbox v-model="checkboxValue2" label="深圳" disabled>深圳</net-checkbox>
+<net-checkbox v-model="checkboxValue3" label="凹凸实验室" disabled checked>凹凸实验室</net-checkbox>
 ```
 :::
 
@@ -31,13 +31,13 @@
 
 :::demo
 ```html
-<at-checkbox-group v-model="checkboxValue4">
-  <at-checkbox label="深圳">深圳</at-checkbox>
-  <at-checkbox label="北京">北京</at-checkbox>
-  <at-checkbox label="上海">上海</at-checkbox>
-  <at-checkbox label="广州" disabled>广州</at-checkbox>
-  <at-checkbox label="凹凸实验室" disabled>凹凸实验室</at-checkbox>
-</at-checkbox-group>
+<net-checkbox-group v-model="checkboxValue4">
+  <net-checkbox label="深圳">深圳</net-checkbox>
+  <net-checkbox label="北京">北京</net-checkbox>
+  <net-checkbox label="上海">上海</net-checkbox>
+  <net-checkbox label="广州" disabled>广州</net-checkbox>
+  <net-checkbox label="凹凸实验室" disabled>凹凸实验室</net-checkbox>
+</net-checkbox-group>
 <p class="demo-desc">{{ checkboxValue4 }}</p>
 ```
 :::

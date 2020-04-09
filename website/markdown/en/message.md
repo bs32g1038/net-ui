@@ -23,10 +23,10 @@ There are four type of Message: `success`, `error`, `warning`, `info`.
 
 :::demo
 ```html
-<at-button @click="handleClick('info')">Info</at-button>
-<at-button @click="handleClick('success')">Success</at-button>
-<at-button @click="handleClick('warning')">Warning</at-button>
-<at-button @click="handleClick('error')">Error</at-button>
+<net-button @click="handleClick('info')">Info</net-button>
+<net-button @click="handleClick('success')">Success</net-button>
+<net-button @click="handleClick('warning')">Warning</net-button>
+<net-button @click="handleClick('error')">Error</net-button>
 
 <script>
   export default {
@@ -54,7 +54,7 @@ Customize message display duration by `duration` property default `3s`.
 
 :::demo
 ```html
-<at-button @click="changeDuration">Customize Duration</at-button>
+<net-button @click="changeDuration">Customize Duration</net-button>
 
 <script>
   export default {
@@ -77,7 +77,7 @@ Customize message display duration by `duration` property default `3s`.
 
 :::demo
 ```html
-<at-button @click="showLoading">Loading...</at-button>
+<net-button @click="showLoading">Loading...</net-button>
 
 <script>
   export default {

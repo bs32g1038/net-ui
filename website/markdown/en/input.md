@@ -9,9 +9,9 @@ Basic Input Box, default width is `100%`.
 
 :::demo
 ```html
-<at-input v-model="inputValue" placeholder="Please input"></at-input>
-<at-input v-model="inputValue" placeholder="Disabled" disabled></at-input>
-<at-input v-model="password" type="password" placeholder="Password"></at-input>
+<net-input v-model="inputValue" placeholder="Please input"></net-input>
+<net-input v-model="inputValue" placeholder="Disabled" disabled></net-input>
+<net-input v-model="password" type="password" placeholder="Password"></net-input>
 ```
 :::
 
@@ -21,10 +21,10 @@ Add the property `status`, which represents the input box with different meaning
 
 :::demo
 ```html
-<at-input v-model="inputValue2" placeholder="success" status="success" icon="check-circle"></at-input>
-<at-input v-model="inputValue2" placeholder="error" status="error" icon="x-circle"></at-input>
-<at-input v-model="inputValue2" placeholder="warning" status="warning" icon="alert-circle"></at-input>
-<at-input v-model="inputValue2" placeholder="info" status="info" icon="info"></at-input>
+<net-input v-model="inputValue2" placeholder="success" status="success" icon="check-circle"></net-input>
+<net-input v-model="inputValue2" placeholder="error" status="error" icon="x-circle"></net-input>
+<net-input v-model="inputValue2" placeholder="warning" status="warning" icon="alert-circle"></net-input>
+<net-input v-model="inputValue2" placeholder="info" status="info" icon="info"></net-input>
 ```
 :::
 
@@ -34,7 +34,7 @@ To display the tooltip icon after the input box, add `icon` property to Input. I
 
 :::demo
 ```html
-<at-input v-model="inputValue3" placeholder="Please input url" icon="link"></at-input>
+<net-input v-model="inputValue3" placeholder="Please input url" icon="link"></net-input>
 ```
 :::
 
@@ -44,41 +44,41 @@ Set `slot="prepend"` or `slot="append"` to customize the input box.
 
 :::demo
 ```html
-<at-input v-model="inputValue4" placeholder="Please input">
+<net-input v-model="inputValue4" placeholder="Please input">
   <template slot="prepend">
     <span>Https://</span>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="Please input" size="small">
+</net-input>
+<net-input v-model="inputValue4" placeholder="Please input" size="small">
   <template slot="append">
     <span>@aotu.io</span>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="Please input">
+</net-input>
+<net-input v-model="inputValue4" placeholder="Please input">
   <template slot="prepend">
     <i class="icon icon-link"></i>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="Please input" prepend-button>
+</net-input>
+<net-input v-model="inputValue4" placeholder="Please input" prepend-button>
   <template slot="prepend">
     <span>Search</span>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="Please input" append-button>
+</net-input>
+<net-input v-model="inputValue4" placeholder="Please input" append-button>
   <template slot="append">
     <span>Search</span>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="Please input" prepend-button>
+</net-input>
+<net-input v-model="inputValue4" placeholder="Please input" prepend-button>
   <template slot="prepend">
     <i class="icon icon-search"></i>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="Please input" append-button>
+</net-input>
+<net-input v-model="inputValue4" placeholder="Please input" append-button>
   <template slot="append">
     <i class="icon icon-search"></i>
   </template>
-</at-input>
+</net-input>
 ```
 :::
 
@@ -88,9 +88,9 @@ There are three sizes of an Input box: `large`，`normal`，`small`.
 
 :::demo
 ```html
-<at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
-<at-input v-model="inputValue" placeholder="Normal Size"></at-input>
-<at-input v-model="inputValue" size="small" placeholder="Small Size"></at-input>
+<net-input v-model="inputValue" size="large" placeholder="Large Size"></net-input>
+<net-input v-model="inputValue" placeholder="Normal Size"></net-input>
+<net-input v-model="inputValue" size="small" placeholder="Small Size"></net-input>
 ```
 :::
 
@@ -143,10 +143,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.at-input {
+.net-input {
   width: 200px;
 
-  & + .at-input {
+  & + .net-input {
     margin-top: 15px;
   }
 }

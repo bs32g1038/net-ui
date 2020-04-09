@@ -9,13 +9,13 @@
 
 :::demo
 ```html
-<at-card style="width: 300px;">
+<net-card style="width: 300px;">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -25,13 +25,13 @@
 
 :::demo
 ```html
-<at-card style="width: 300px;" :bordered="false">
+<net-card style="width: 300px;" :bordered="false">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -40,13 +40,13 @@
 
 :::demo
 ```html
-<at-card style="width: 300px;" :no-hover="true">
+<net-card style="width: 300px;" :no-hover="true">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -56,14 +56,14 @@
 
 :::demo
 ```html
-<at-card style="width: 300px;" :body-style="{ padding: 0 }">
+<net-card style="width: 300px;" :body-style="{ padding: 0 }">
   <div>
-    <img style="width: 100%" src="https://misc.aotu.io/koppthe/at-ui/cover.jpg">
+    <img style="width: 100%" src="https://misc.aotu.io/koppthe/net-ui/cover.jpg">
     <div style="padding: 14px;">
       <p>AT-UI</p>
     </div>
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -74,13 +74,13 @@
 
 :::demo
 ```html
-<at-card :loading="loading" :style="{ width: '300px' }">
+<net-card :loading="loading" :style="{ width: '300px' }">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -90,14 +90,14 @@
 
 :::demo
 ```html
-<at-card :loading="loading" style="width: 300px">
+<net-card :loading="loading" style="width: 300px">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div slot="loading">加载中...</div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 

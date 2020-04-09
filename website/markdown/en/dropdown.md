@@ -11,26 +11,26 @@ The most basic dropdown combines with `AtDropdown`，`AtDropdownMenu` and `AtDro
 
 :::demo
 ```html
-<at-dropdown>
+<net-dropdown>
   <span>Dropdown <i class="icon icon-chevron-down"></i></span>
-  <at-dropdown-menu slot="menu">
-    <at-dropdown-item>Shenzhen</at-dropdown-item>
-    <at-dropdown-item>Guangzhou</at-dropdown-item>
-    <at-dropdown-item disabled>Shanghai</at-dropdown-item>
-    <at-dropdown-item divided>Beijing</at-dropdown-item>
-    <at-dropdown-item>hangzhou</at-dropdown-item>
-  </at-dropdown-menu>
-</at-dropdown>
-<at-dropdown>
-  <at-button size="small">Dropdown <i class="icon icon-chevron-down"></i></at-button>
-  <at-dropdown-menu slot="menu">
-    <at-dropdown-item>Shenzhen</at-dropdown-item>
-    <at-dropdown-item>Guangzhou</at-dropdown-item>
-    <at-dropdown-item disabled>Shanghai</at-dropdown-item>
-    <at-dropdown-item divided>Beijing</at-dropdown-item>
-    <at-dropdown-item>hangzhou</at-dropdown-item>
-  </at-dropdown-menu>
-</at-dropdown>
+  <net-dropdown-menu slot="menu">
+    <net-dropdown-item>Shenzhen</net-dropdown-item>
+    <net-dropdown-item>Guangzhou</net-dropdown-item>
+    <net-dropdown-item disabled>Shanghai</net-dropdown-item>
+    <net-dropdown-item divided>Beijing</net-dropdown-item>
+    <net-dropdown-item>hangzhou</net-dropdown-item>
+  </net-dropdown-menu>
+</net-dropdown>
+<net-dropdown>
+  <net-button size="small">Dropdown <i class="icon icon-chevron-down"></i></net-button>
+  <net-dropdown-menu slot="menu">
+    <net-dropdown-item>Shenzhen</net-dropdown-item>
+    <net-dropdown-item>Guangzhou</net-dropdown-item>
+    <net-dropdown-item disabled>Shanghai</net-dropdown-item>
+    <net-dropdown-item divided>Beijing</net-dropdown-item>
+    <net-dropdown-item>hangzhou</net-dropdown-item>
+  </net-dropdown-menu>
+</net-dropdown>
 ```
 :::
 
@@ -40,24 +40,24 @@ Use `trigger` property to change the way of trigger. Default is `hover`.
 
 :::demo
 ```html
-<at-dropdown>
-  <at-button size="small">Hover Menu <i class="icon icon-chevron-down"></at-button>
-  <at-dropdown-menu slot="menu">
-    <at-dropdown-item name="shenzhen">Shenzhen</at-dropdown-item>
-    <at-dropdown-item name="guangzhou">Guangzhou</at-dropdown-item>
-    <at-dropdown-item name="shanghai" disabled>Shanghai</at-dropdown-item>
-    <at-dropdown-item name="beijin" divided>Beijing</at-dropdown-item>
-  </at-dropdown-menu>
-</at-dropdown>
-<at-dropdown trigger="click">
-  <at-button size="small">Click Menu <i class="icon icon-chevron-down"></at-button>
-  <at-dropdown-menu slot="menu">
-    <at-dropdown-item name="shenzhen">Shenzhen</at-dropdown-item>
-    <at-dropdown-item name="guangzhou">Guangzhou</at-dropdown-item>
-    <at-dropdown-item name="shanghai" disabled>Shanghai</at-dropdown-item>
-    <at-dropdown-item name="beijin" divided>Beijing</at-dropdown-item>
-  </at-dropdown-menu>
-</at-dropdown>
+<net-dropdown>
+  <net-button size="small">Hover Menu <i class="icon icon-chevron-down"></net-button>
+  <net-dropdown-menu slot="menu">
+    <net-dropdown-item name="shenzhen">Shenzhen</net-dropdown-item>
+    <net-dropdown-item name="guangzhou">Guangzhou</net-dropdown-item>
+    <net-dropdown-item name="shanghai" disabled>Shanghai</net-dropdown-item>
+    <net-dropdown-item name="beijin" divided>Beijing</net-dropdown-item>
+  </net-dropdown-menu>
+</net-dropdown>
+<net-dropdown trigger="click">
+  <net-button size="small">Click Menu <i class="icon icon-chevron-down"></net-button>
+  <net-dropdown-menu slot="menu">
+    <net-dropdown-item name="shenzhen">Shenzhen</net-dropdown-item>
+    <net-dropdown-item name="guangzhou">Guangzhou</net-dropdown-item>
+    <net-dropdown-item name="shanghai" disabled>Shanghai</net-dropdown-item>
+    <net-dropdown-item name="beijin" divided>Beijing</net-dropdown-item>
+  </net-dropdown-menu>
+</net-dropdown>
 ```
 :::
 
@@ -67,15 +67,15 @@ To change the alignment of Dropdown, add `placement` property to the Dropdown.
 
 :::demo
 ```html
-<at-dropdown placement="bottom-right">
-  <at-button size="small">Hover Menu <i class="icon icon-chevron-down"></at-button>
-  <at-dropdown-menu slot="menu">
-    <at-dropdown-item name="shenzhen">Shenzhen</at-dropdown-item>
-    <at-dropdown-item name="guangzhou">Guangzhou</at-dropdown-item>
-    <at-dropdown-item name="shanghai" disabled>Shanghai</at-dropdown-item>
-    <at-dropdown-item name="beijin" divided>Beijing</at-dropdown-item>
-  </at-dropdown-menu>
-</at-dropdown>
+<net-dropdown placement="bottom-right">
+  <net-button size="small">Hover Menu <i class="icon icon-chevron-down"></net-button>
+  <net-dropdown-menu slot="menu">
+    <net-dropdown-item name="shenzhen">Shenzhen</net-dropdown-item>
+    <net-dropdown-item name="guangzhou">Guangzhou</net-dropdown-item>
+    <net-dropdown-item name="shanghai" disabled>Shanghai</net-dropdown-item>
+    <net-dropdown-item name="beijin" divided>Beijing</net-dropdown-item>
+  </net-dropdown-menu>
+</net-dropdown>
 ```
 :::
 
@@ -85,14 +85,14 @@ Event `on-dropdown-command` emitted when the dropdown item was clicked, return t
 
 :::demo
 ```html
-<at-dropdown placement="bottom-right" @on-dropdown-command="handleCommand">
-  <at-button size="small">Hover Menu <i class="icon icon-chevron-down"></at-button>
-  <at-dropdown-menu slot="menu">
-    <at-dropdown-item name="shenzhen">Shenzhen</at-dropdown-item>
-    <at-dropdown-item name="guangzhou">Guangzhou</at-dropdown-item>
-    <at-dropdown-item name="shanghai" disabled>Shanghai</at-dropdown-item>
-  </at-dropdown-menu>
-</at-dropdown>
+<net-dropdown placement="bottom-right" @on-dropdown-command="handleCommand">
+  <net-button size="small">Hover Menu <i class="icon icon-chevron-down"></net-button>
+  <net-dropdown-menu slot="menu">
+    <net-dropdown-item name="shenzhen">Shenzhen</net-dropdown-item>
+    <net-dropdown-item name="guangzhou">Guangzhou</net-dropdown-item>
+    <net-dropdown-item name="shanghai" disabled>Shanghai</net-dropdown-item>
+  </net-dropdown-menu>
+</net-dropdown>
 ```
 :::
 
@@ -118,10 +118,10 @@ Event `on-dropdown-command` emitted when the dropdown item was clicked, return t
 | divided | whether to show split line | Boolean | - | false |
 
 <style lang="scss" scoped>
-  .at-dropdown + .at-dropdown {
+  .net-dropdown + .net-dropdown {
     margin-left: 8px;
   }
-  .at-dropdown__trigger {
+  .net-dropdown__trigger {
     > span {
       font-size: 12px;
     }

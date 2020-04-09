@@ -9,13 +9,13 @@ A basic card containing a title, content and an extra corner content.
 
 :::demo
 ```html
-<at-card style="width: 300px;">
+<net-card style="width: 300px;">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -25,13 +25,13 @@ A borderless card.
 
 :::demo
 ```html
-<at-card style="width: 300px;" :bordered="false">
+<net-card style="width: 300px;" :bordered="false">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -41,13 +41,13 @@ Disable mouse hover shadow.
 
 :::demo
 ```html
-<at-card style="width: 300px;" :no-hover="true">
+<net-card style="width: 300px;" :no-hover="true">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -57,14 +57,14 @@ A simple card only containing a content area.
 
 :::demo
 ```html
-<at-card style="width: 300px;" :body-style="{ padding: 0 }">
+<net-card style="width: 300px;" :body-style="{ padding: 0 }">
   <div>
-    <img style="width: 100%" src="https://misc.aotu.io/koppthe/at-ui/cover.jpg">
+    <img style="width: 100%" src="https://misc.aotu.io/koppthe/net-ui/cover.jpg">
     <div style="padding: 14px;">
       <p>AT-UI</p>
     </div>
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -74,13 +74,13 @@ Shows a loading indicator while the contents of the card is being fetched.
 
 :::demo
 ```html
-<at-card :loading="loading" :style="{ width: '300px' }">
+<net-card :loading="loading" :style="{ width: '300px' }">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 
@@ -90,14 +90,14 @@ Custom loading content.
 
 :::demo
 ```html
-<at-card :loading="loading" style="width: 300px">
+<net-card :loading="loading" style="width: 300px">
   <h4 slot="title">Card Title</h4>
   <div slot="extra"><a>Extra</a></div>
   <div slot="loading">Loading...</div>
   <div>
     Card Content
   </div>
-</at-card>
+</net-card>
 ```
 :::
 

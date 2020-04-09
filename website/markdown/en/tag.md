@@ -8,10 +8,10 @@ To make a tag get close button, add `closable` property to `Tag`. Trigger `on-cl
 
 :::demo
 ```html
-<at-tag>Tag One</at-tag>
-<at-tag>Tag Two</at-tag>
-<at-tag>Tag Three</at-tag>
-<at-tag name="Tag Four" closable v-if="show" @on-close="handleClose">Tag Four</at-tag>
+<net-tag>Tag One</net-tag>
+<net-tag>Tag Two</net-tag>
+<net-tag>Tag Three</net-tag>
+<net-tag name="Tag Four" closable v-if="show" @on-close="handleClose">Tag Four</net-tag>
 ```
 :::
 
@@ -21,13 +21,13 @@ Tag with color tendency gives different types. Set property `color`. It also pro
 
 :::demo
 ```html
-<at-tag color="default">Tag One</at-tag>
-<at-tag color="primary">Tag Two</at-tag>
-<at-tag color="success">Tag Three</at-tag>
-<at-tag color="error">Tag Four</at-tag>
-<at-tag color="warning">Tag Five</at-tag>
-<at-tag color="info">Tag Six</at-tag>
-<at-tag color="#ecefce">#ecefce</at-tag>
+<net-tag color="default">Tag One</net-tag>
+<net-tag color="primary">Tag Two</net-tag>
+<net-tag color="success">Tag Three</net-tag>
+<net-tag color="error">Tag Four</net-tag>
+<net-tag color="warning">Tag Five</net-tag>
+<net-tag color="info">Tag Six</net-tag>
+<net-tag color="#ecefce">#ecefce</net-tag>
 ```
 :::
 

@@ -9,12 +9,12 @@
 
 :::demo
 ```html
-<at-popover placement="top" title="Title" content="Top Placement">
-  <at-button size="small">点击</at-button>
-</at-popover>
-<at-popover content="Top Placement" title="Title">
+<net-popover placement="top" title="Title" content="Top Placement">
+  <net-button size="small">点击</net-button>
+</net-popover>
+<net-popover content="Top Placement" title="Title">
   一段文字
-</at-popover>
+</net-popover>
 ```
 :::
 
@@ -24,12 +24,12 @@
 
 :::demo
 ```html
-<at-popover trigger="click" content="Top Placement">
-  <at-button size="small">Click</at-button>
-</at-popover>
-<at-popover trigger="hover" title="Title" content="Top Placement">
-  <at-button size="small">Hover</at-button>
-</at-popover>
+<net-popover trigger="click" content="Top Placement">
+  <net-button size="small">Click</net-button>
+</net-popover>
+<net-popover trigger="hover" title="Title" content="Top Placement">
+  <net-button size="small">Hover</net-button>
+</net-popover>
 ```
 :::
 
@@ -39,18 +39,18 @@
 
 :::demo
 ```html
-<at-popover trigger="hover" content="Top Placement">
-  <at-button size="small">Top</at-button>
-</at-popover>
-<at-popover trigger="hover" content="Top Placement" placement="bottom">
-  <at-button size="small">Bottom</at-button>
-</at-popover>
-<at-popover trigger="hover" content="Top Placement" placement="left">
-  <at-button size="small">Left</at-button>
-</at-popover>
-<at-popover trigger="hover" content="Top Placement" placement="right">
-  <at-button size="small">Right</at-button>
-</at-popover>
+<net-popover trigger="hover" content="Top Placement">
+  <net-button size="small">Top</net-button>
+</net-popover>
+<net-popover trigger="hover" content="Top Placement" placement="bottom">
+  <net-button size="small">Bottom</net-button>
+</net-popover>
+<net-popover trigger="hover" content="Top Placement" placement="left">
+  <net-button size="small">Left</net-button>
+</net-popover>
+<net-popover trigger="hover" content="Top Placement" placement="right">
+  <net-button size="small">Right</net-button>
+</net-popover>
 ```
 :::
 
@@ -60,16 +60,16 @@
 
 :::demo
 ```html
-<at-popover placement="top" v-model="show" @toggle="toggleShow">
-  <at-button size="small">删除</at-button>
+<net-popover placement="top" v-model="show" @toggle="toggleShow">
+  <net-button size="small">删除</net-button>
   <template slot="content">
     <p>这是一段内容，确定删除吗？</p>
     <div style="text-align: right; margin-top: 8px;">
-      <at-button size="smaller" @click="show = false">取消</at-button>
-      <at-button type="primary" size="smaller" @click="show = false">确定</at-button>
+      <net-button size="smaller" @click="show = false">取消</net-button>
+      <net-button type="primary" size="smaller" @click="show = false">确定</net-button>
     </div>
   </template>
-</at-popover>
+</net-popover>
 ```
 :::
 
@@ -83,7 +83,7 @@
 | placement | 弹出框的位置 | String | `top`, `top-left`, `top-right`, `left`, `left-top`, `left-bottom`, `right`, `right-top`, `right-bottom`, `bottom`, `bottom-left`, `bottom-right` | `top` |
 
 <style lang="scss" scoped>
-.at-popover + .at-popover {
+.net-popover + .net-popover {
   margin-left: 16px;
 }
 </style>

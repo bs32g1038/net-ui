@@ -9,7 +9,7 @@
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data1"></at-table>
+<net-table :columns="columns1" :data="data1"></net-table>
 
 <script>
   export default {
@@ -89,7 +89,7 @@
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data1" stripe></at-table>
+<net-table :columns="columns1" :data="data1" stripe></net-table>
 
 <script>
   export default {
@@ -169,7 +169,7 @@
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data1" border></at-table>
+<net-table :columns="columns1" :data="data1" border></net-table>
 
 <script>
   export default {
@@ -249,7 +249,7 @@
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data1" height="220"></at-table>
+<net-table :columns="columns1" :data="data1" height="220"></net-table>
 
 <script>
   export default {
@@ -329,7 +329,7 @@
 
 :::demo
 ```html
-<at-table :columns="columns1" :data="data2" optional></at-table>
+<net-table :columns="columns1" :data="data2" optional></net-table>
 
 <script>
   export default {
@@ -386,7 +386,7 @@
 
 :::demo
 ```html
-<at-table :columns="columns2" :data="data2"></at-table>
+<net-table :columns="columns2" :data="data2"></net-table>
 
 <script>
   export default {
@@ -444,7 +444,7 @@
 
 :::demo
 ```html
-<at-table :columns="columns3" :data="data2" sort></at-table>
+<net-table :columns="columns3" :data="data2" sort></net-table>
 
 <script>
   export default {
@@ -532,9 +532,9 @@
 
 :::demo
 ```html
-<at-table :columns="columns3" :data="data2" size="large" sort></at-table>
+<net-table :columns="columns3" :data="data2" size="large" sort></net-table>
 
-<at-table style="margin-top: 24px;" :columns="columns4" :data="data2" size="small" sort></at-table>
+<net-table style="margin-top: 24px;" :columns="columns4" :data="data2" size="small" sort></net-table>
 
 <script>
   export default {
@@ -669,7 +669,7 @@
 
 :::demo
 ```html
-<at-table :columns="columns2" :data="data3" pagination></at-table>
+<net-table :columns="columns2" :data="data3" pagination></net-table>
 
 <script>
   export default {

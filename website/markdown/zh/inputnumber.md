@@ -12,13 +12,13 @@
 <p class="demo-desc">基本输入框</p>
 <div class="row no-gutter">
   <div class="col-md-4">
-    <at-input-number v-model="num"></at-input-number><br>
+    <net-input-number v-model="num"></net-input-number><br>
   </div>
 </div>
 <p class="demo-desc">有取值范围的输入框，min=0, max=5</p>
 <div class="row no-gutter">
   <div class="col-md-4">
-    <at-input-number :min="0" :max="5"></at-input-number>
+    <net-input-number :min="0" :max="5"></net-input-number>
   </div>
 </div>
 ```
@@ -32,7 +32,7 @@
 ```html
 <div class="row no-gutter">
   <div class="col-md-4">
-    <at-input-number disabled></at-input-number>
+    <net-input-number disabled></net-input-number>
   </div>
 </div>
 ```
@@ -47,7 +47,7 @@
 <p class="demo-desc">step=0.3, min=1</p>
 <div class="row no-gutter">
   <div class="col-md-4">
-    <at-input-number v-model="num2" :step="0.3" :min="1"></at-input-number>
+    <net-input-number v-model="num2" :step="0.3" :min="1"></net-input-number>
   </div>
 </div>
 ```
@@ -61,13 +61,13 @@
 ```html
 <div class="row">
   <div class="col-sm-12 col-md-4">
-    <at-input-number size="small"></at-input-number>
+    <net-input-number size="small"></net-input-number>
   </div>
   <div class="col-sm-12 col-md-4">
-    <at-input-number></at-input-number>
+    <net-input-number></net-input-number>
   </div>
   <div class="col-sm-12 col-md-4">
-    <at-input-number size="large"></at-input-number>
+    <net-input-number size="large"></net-input-number>
   </div>
 </div>
 ```

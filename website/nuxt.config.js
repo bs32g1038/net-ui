@@ -27,7 +27,7 @@ let markdownIt = require('@vuepress/markdown')({
     ],
 });
 
-markdownIt.renderer.rules.table_open = function () {
+markdownIt.renderer.rules.table_open = function() {
     return '<table class="table">';
 };
 markdownIt.renderer.rules.fence = utils.wrapCustomClass(markdownIt.renderer.rules.fence);
@@ -44,7 +44,7 @@ export default {
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '~@/assets/logo-at@2x.png' }],
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '@/assets/logo-at@2x.png' }],
     },
     /*
      ** Customize the progress-bar color
@@ -53,7 +53,7 @@ export default {
     /*
      ** Global CSS
      */
-    css: ['net-ui-style/css/at.css'],
+    css: ['@net-ui/theme/dist/net.css'],
     /*
      ** Plugins to load before mounting the App
      */
@@ -69,7 +69,7 @@ export default {
     /*
      ** Build configuration
      */
-    
+
     build: {
         /*
          ** You can extend webpack config here
@@ -77,7 +77,7 @@ export default {
         extend(config, ctx) {
             config.resolve.alias = {
                 ...config.resolve.alias,
-                'net-ui-theme': path.resolve(__dirname, '../packages/at-ui-style/src'),
+                'net-ui-theme': path.resolve(__dirname, '../packages/net-ui-theme/src'),
             };
             config.module.rules.push({
                 test: /\.md$/,

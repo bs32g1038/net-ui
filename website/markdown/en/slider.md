@@ -11,7 +11,7 @@ Basic slider, use `v-model` to binding value, the range is `0~100` default.
 
 :::demo
 ```html
-<at-slider v-model="value"></at-slider>
+<net-slider v-model="value"></net-slider>
 ```
 :::
 
@@ -21,7 +21,7 @@ To make a slider as disabled, add `disabled` property to the Slider.
 
 :::demo
 ```html
-<at-slider v-model="value2" disabled></at-slider>
+<net-slider v-model="value2" disabled></net-slider>
 ```
 :::
 
@@ -31,7 +31,7 @@ The minimum and maximum values are set by `min` and `max` properties.
 
 :::demo
 ```html
-<at-slider v-model="value3" :min="20" :max="80"></at-slider>
+<net-slider v-model="value3" :min="20" :max="80"></net-slider>
 ```
 :::
 
@@ -41,7 +41,7 @@ Control the interval of slider through the `step` property, the value of interva
 
 :::demo
 ```html
-<at-slider v-model="value4" :step="10"></at-slider>
+<net-slider v-model="value4" :step="10"></net-slider>
 ```
 :::
 

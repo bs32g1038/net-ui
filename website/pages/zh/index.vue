@@ -65,9 +65,7 @@
                         了解设计指南，利用统一的规范进行设计赋能，帮助产品设计师，前端工程师，后台工程师迅速搭建中后台产品。
                     </div>
                     <div class="btn-readmore">
-                        <nuxt-link :to="{ name: 'Guide' }"
-                            >查看详情 <i class="icon icon-chevron-right"></i
-                        ></nuxt-link>
+                        <nuxt-link :to="{ name: 'Guide' }">查看详情 <i class="icon icon-chevron-right"></i></nuxt-link>
                     </div>
                 </div>
                 <div class="navigation-panel">
@@ -80,9 +78,7 @@
                         体验交互细节，开发中既可以根据需要单独引用，也可以使用全局方式引入所有组件。
                     </div>
                     <div class="btn-readmore">
-                        <nuxt-link :to="{ name: 'Docs' }"
-                            >查看详情 <i class="icon icon-chevron-right"></i
-                        ></nuxt-link>
+                        <nuxt-link :to="{ name: 'Docs' }">查看详情 <i class="icon icon-chevron-right"></i></nuxt-link>
                     </div>
                 </div>
                 <div class="navigation-panel">

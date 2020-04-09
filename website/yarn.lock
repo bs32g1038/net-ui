@@ -2273,7 +2273,7 @@ coa@^2.0.2:
 
 code-point-at@^1.0.0:
   version "1.1.0"
-  resolved "https://registry.npm.taobao.org/code-point-at/download/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
+  resolved "https://registry.npm.taobao.org/code-point-at/download/code-point-net-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
 collection-visit@^1.0.0:
@@ -5123,9 +5123,9 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha1-rCetpmFn+ohJpq3dg39rGJrSCBw=
 
-net-ui-style@^1.0.0-alpha.0:
+net-ui-theme@^1.0.0-alpha.0:
   version "1.0.0-alpha.0"
-  resolved "https://registry.npm.taobao.org/net-ui-style/download/net-ui-style-1.0.0-alpha.0.tgz#002b0bbaab6645a325bad544c491100fc9f04330"
+  resolved "https://registry.npm.taobao.org/net-ui-theme/download/net-ui-theme-1.0.0-alpha.0.tgz#002b0bbaab6645a325bad544c491100fc9f04330"
   integrity sha1-ACsLuqtmRaMlutVExJEQD8nwQzA=
 
 net-ui@^1.0.0-alpha.0:

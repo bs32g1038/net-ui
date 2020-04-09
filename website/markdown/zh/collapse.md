@@ -9,15 +9,15 @@
 
 :::demo
 ```html
-<at-collapse :value="[0, 1]">
-  <at-collapse-item
+<net-collapse :value="[0, 1]">
+  <net-collapse-item
     v-for="(item, index) in list" :key="index"
     :title="item.title" :disabled="item.disabled">
     <div>
       {{ item.content }}
     </div>
-  </at-collapse-item>
-</at-collapse>
+  </net-collapse-item>
+</net-collapse>
 ```
 :::
 
@@ -27,15 +27,15 @@
 
 :::demo
 ```html
-<at-collapse accordion :value="0">
-  <at-collapse-item
+<net-collapse accordion :value="0">
+  <net-collapse-item
     v-for="(item, index) in list" :key="index"
     :title="item.title">
     <div>
       {{ item.content }}
     </div>
-  </at-collapse-item>
-</at-collapse>
+  </net-collapse-item>
+</net-collapse>
 ```
 :::
 
@@ -45,20 +45,20 @@
 
 :::demo
 ```html
-<at-collapse @on-change="changeHandle" value="0">
-  <at-collapse-item
+<net-collapse @on-change="changeHandle" value="0">
+  <net-collapse-item
     v-for="(item, index) in list" :key="index"
     :title="item.title">
     <div>
       {{ index !== 0 ? item.content : '' }}
-      <at-collapse accordion v-if="index === 0">
-        <at-collapse-item title="嵌套面板">
+      <net-collapse accordion v-if="index === 0">
+        <net-collapse-item title="嵌套面板">
           <div>嵌套面板的内容</div>
-        </at-collapse-item>
-      </at-collapse>
+        </net-collapse-item>
+      </net-collapse>
     </div>
-  </at-collapse-item>
-</at-collapse>
+  </net-collapse-item>
+</net-collapse>
 ```
 :::
 
@@ -69,20 +69,20 @@
 
 :::demo
 ```html
-<at-collapse accordion :value="value">
-  <at-collapse-item name="collapse1">
+<net-collapse accordion :value="value">
+  <net-collapse-item name="collapse1">
     <div slot="title">标题一 <i class="icon icon-info"></div>
     <div>内容一</div>
-  </at-collapse-item>
-  <at-collapse-item name="collapse2">
+  </net-collapse-item>
+  <net-collapse-item name="collapse2">
     <div slot="title">标题一 <i class="icon icon-box"></div>
     <div>内容一</div>
-  </at-collapse-item>
-  <at-collapse-item>
+  </net-collapse-item>
+  <net-collapse-item>
     <div slot="title">标题一 <i class="icon icon-calendar"></div>
     <div>内容一</div>
-  </at-collapse-item>
-</at-collapse>
+  </net-collapse-item>
+</net-collapse>
 ```
 :::
 
@@ -92,15 +92,15 @@
 
 :::demo
 ```html
-<at-collapse simple accordion :value="0">
-  <at-collapse-item
+<net-collapse simple accordion :value="0">
+  <net-collapse-item
     v-for="(item, index) in list" :key="index"
     :title="item.title">
     <div>
       {{ item.content }}
     </div>
-  </at-collapse-item>
-</at-collapse>
+  </net-collapse-item>
+</net-collapse>
 ```
 :::
 

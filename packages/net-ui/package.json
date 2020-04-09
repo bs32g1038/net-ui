@@ -1,0 +1,46 @@
+{
+  "name": "@net-ui/core",
+  "version": "1.0.0-alpha.1",
+  "description": "A UI Component Library with Vue.js",
+  "homepage": "https://net-ui.lizc.net",
+  "main": "dist/net.umd.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name net src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bs32g1038/net-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bs32g1038/net-ui/issues"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "keywords": [
+    "net",
+    "net-ui",
+    "desktop",
+    "ui",
+    "framework",
+    "component"
+  ],
+  "files": [
+    "dist/net.common.js",
+    "dist/net.umd.js",
+    "dist/net.umd.min.js",
+    "src"
+  ],
+  "author": "bs32g1038 Ho <bs32g1038@163.com>",
+  "license": "MIT"
+}

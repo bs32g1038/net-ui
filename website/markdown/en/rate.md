@@ -11,7 +11,7 @@ The simplest usage.
 
 :::demo
 ```html
-<at-rate></at-rate>
+<net-rate></net-rate>
 ```
 :::
 
@@ -21,9 +21,9 @@ Add copywriting in rate component.
 
 :::demo
 ```html
-<at-rate :show-text="true" v-model="value2">
+<net-rate :show-text="true" v-model="value2">
   <span>{{ value2 }} stars</span>
-</at-rate>
+</net-rate>
 ```
 :::
 
@@ -33,7 +33,7 @@ Replace the default star to other icon.
 
 :::demo
 ```html
-<at-rate icon="icon-heart-on"></at-rate>
+<net-rate icon="icon-heart-on"></net-rate>
 ```
 :::
 
@@ -44,12 +44,12 @@ Support select half star.
 :::demo
 ```html
 <div >
-  <at-rate
+  <net-rate
     :allow-half="true"
     :show-text="true"
     :value="value1"
     @on-change="changeHandle">
-  </at-rate>
+  </net-rate>
 </div>
 ```
 :::
@@ -61,12 +61,12 @@ Read only，can't use mouse to interact.
 :::demo
 ```html
 <div >
-  <at-rate
+  <net-rate
     :allow-half="true"
     :show-text="true"
     :value="value1"
     :disabled="true">
-  </at-rate>
+  </net-rate>
 </div>
 ```
 :::

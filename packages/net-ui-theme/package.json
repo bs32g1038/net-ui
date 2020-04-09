@@ -1,0 +1,41 @@
+{
+  "name": "@net-ui/theme",
+  "version": "1.0.0-alpha.1",
+  "description": "The StyleSheet for NET-UI",
+  "scss": "src/index.scss",
+  "main": "dist/net.css",
+  "style": "dist/net.css",
+  "scripts": {
+    "build": "npm run build-clean && npm run copy && npm run generate-one-scss && npm run build-scss && npm run build-scss-minify && npm run build-autoprefix",
+    "build-clean": "rimraf css",
+    "generate-one-scss": "scss-bundle --config ./scss-bundle.config.json",
+    "build-scss": "node-sass --output-style expanded --source-map true src/index.scss dist/net.css",
+    "build-scss-minify": "node-sass --output-style compressed --source-map true src/index.scss dist/net.min.css",
+    "build-autoprefix": "postcss --use autoprefixer -c postcss.json dist/*.css -d dist/",
+    "copy": "copyfiles -f src/fonts/*.* dist/fonts/",
+    "prepublish": "npm run build",
+    "start": "npm run build-scss -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bs32g1038/net-ui.git"
+  },
+  "keywords": [
+    "at",
+    "at-ui",
+    "at-ui-style",
+    "css",
+    "scss",
+    "framework"
+  ],
+  "author": "bs32g1038 Ho <bs32g1038@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "copyfiles": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "scss-bundle": "^3.1.1"
+  }
+}

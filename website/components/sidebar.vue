@@ -1,30 +1,30 @@
 <template>
-    <div class="at-sidebar col-sm-24 col-md-6 col-lg-4">
-        <nav class="at-nav">
+    <div class="net-sidebar col-sm-24 col-md-6 col-lg-4">
+        <nav class="net-nav">
             <template v-for="item in data">
                 <div :key="item.title">
-                    <h2 class="at-nav__title">{{ item.title }}</h2>
-                    <ul class="at-nav__items">
+                    <h2 class="net-nav__title">{{ item.title }}</h2>
+                    <ul class="net-nav__items">
                         <template v-if="item.items">
-                            <li class="at-nav__item" v-for="navItem in item.items" :key="navItem.name.toLowerCase()">
-                                <nuxt-link class="at-nav__page" :to="navItem.name.toLowerCase()">{{
+                            <li class="net-nav__item" v-for="navItem in item.items" :key="navItem.name.toLowerCase()">
+                                <nuxt-link class="net-nav__page" :to="navItem.name.toLowerCase()">{{
                                     navItem.title
                                 }}</nuxt-link>
                             </li>
                         </template>
-                        <li class="at-nav__item active" v-for="group in item.groups" :key="group.title">
-                            <a class="at-nav__group" @click="toggleMenu"
+                        <li class="net-nav__item active" v-for="group in item.groups" :key="group.title">
+                            <a class="net-nav__group" @click="toggleMenu"
                                 >{{ group.title }}<i class="icon icon-chevron-down"></i
                             ></a>
-                            <ul class="at-nav__child-items">
-                                <li class="at-nav__child-item" v-for="navItem in group.items" :key="navItem.title">
+                            <ul class="net-nav__child-items">
+                                <li class="net-nav__child-item" v-for="navItem in group.items" :key="navItem.title">
                                     <nuxt-link
                                         v-if="lang === 'zh'"
-                                        class="at-nav__component"
+                                        class="net-nav__component"
                                         :to="navItem.name.toLowerCase()"
                                         >{{ navItem.name }}<span>{{ navItem.title }}</span></nuxt-link
                                     >
-                                    <nuxt-link v-else class="at-nav__component" :to="navItem.name.toLowerCase()">{{
+                                    <nuxt-link v-else class="net-nav__component" :to="navItem.name.toLowerCase()">{{
                                         navItem.title
                                     }}</nuxt-link>
                                 </li>
@@ -64,9 +64,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'net-ui-style/src/variables/index.scss';
+@import 'net-ui-theme/src/variables/index.scss';
 
-.at-sidebar {
+.net-sidebar {
     display: inline-block;
     margin: 32px 0;
     padding: 0;
@@ -80,7 +80,7 @@ export default {
 /**
  * Navigation
  */
-.at-nav {
+.net-nav {
     font-size: 14px;
 
     &__title {
@@ -215,7 +215,7 @@ export default {
         }
     }
 }
-.at-nav__arrow {
+.net-nav__arrow {
     position: absolute;
     top: 18px;
     right: 12px;
@@ -227,11 +227,11 @@ export default {
         transform: rotate(180deg);
     }
 }
-.at-nsc,
-.at-nsc:focus,
-.at-nsc:hover,
-.at-nsc:active,
-.at-nsc:visited {
+.net-nsc,
+.net-nsc:focus,
+.net-nsc:hover,
+.net-nsc:active,
+.net-nsc:visited {
     color: #fff;
 }
 </style>

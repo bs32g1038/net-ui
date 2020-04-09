@@ -10,14 +10,14 @@
 简单的步骤条
 :::demo
 ```html
-<at-steps :current='current'>
-  <at-step title="Step1" description="This is a description."></at-step>
-  <at-step title="Step2" description="This is a description."></at-step>
-  <at-step title="Step3"></at-step>
-</at-steps>
+<net-steps :current='current'>
+  <net-step title="Step1" description="This is a description."></net-step>
+  <net-step title="Step2" description="This is a description."></net-step>
+  <net-step title="Step3"></net-step>
+</net-steps>
 
-<at-button type="primary" @click="prev" style="margin-top: 12px;">Prev</at-button>
-<at-button type="primary" @click="next" style="margin-top: 12px;">Next</at-button>
+<net-button type="primary" @click="prev" style="margin-top: 12px;">Prev</net-button>
+<net-button type="primary" @click="next" style="margin-top: 12px;">Next</net-button>
 ```
 :::
 
@@ -27,14 +27,14 @@
 
 :::demo
 ```html
-<at-steps size="small" :current='current'>
-  <at-step title="Step1" description="This is a description."></at-step>
-  <at-step title="Step2" description="This is a description."></at-step>
-  <at-step title="Step3"></at-step>
-</at-steps>
+<net-steps size="small" :current='current'>
+  <net-step title="Step1" description="This is a description."></net-step>
+  <net-step title="Step2" description="This is a description."></net-step>
+  <net-step title="Step3"></net-step>
+</net-steps>
 
-<at-button type="primary" @click="prev" style="margin-top: 12px;">Prev</at-button>
-<at-button type="primary" @click="next" style="margin-top: 12px;">Next</at-button>
+<net-button type="primary" @click="prev" style="margin-top: 12px;">Prev</net-button>
+<net-button type="primary" @click="next" style="margin-top: 12px;">Next</net-button>
 ```
 :::
 
@@ -44,14 +44,14 @@
 
 :::demo
 ```html
-<at-steps :current='current'>
-  <at-step title="Step1" description="This is a description." icon="icon-user"></at-step>
-  <at-step title="Step2" description="This is a description." icon="icon-airplay"></at-step>
-  <at-step title="Step3" icon="icon-pocket"></at-step>
-</at-steps>
+<net-steps :current='current'>
+  <net-step title="Step1" description="This is a description." icon="icon-user"></net-step>
+  <net-step title="Step2" description="This is a description." icon="icon-airplay"></net-step>
+  <net-step title="Step3" icon="icon-pocket"></net-step>
+</net-steps>
 
-<at-button type="primary" @click="prev" style="margin-top: 12px;">Prev</at-button>
-<at-button type="primary" @click="next" style="margin-top: 12px;">Next</at-button>
+<net-button type="primary" @click="prev" style="margin-top: 12px;">Prev</net-button>
+<net-button type="primary" @click="next" style="margin-top: 12px;">Next</net-button>
 ```
 :::
 
@@ -61,17 +61,17 @@
 
 :::demo
 ```html
-<at-steps :current='current'>
-  <at-step v-for="(step, index) in steps"
+<net-steps :current='current'>
+  <net-step v-for="(step, index) in steps"
     :title="step.title"
-    :key="index"></at-step>
-</at-steps>
+    :key="index"></net-step>
+</net-steps>
 <div class="steps-content" style="margin-top: 16px; border: 1px solid #e9e9e9; border-radius: 6px;background-color: #fafafa; min-height: 200px; text-align: center; padding-top:80px;">
   {{ steps[current].content }}
 </div>
 
-<at-button type="primary" @click="prev" style="margin-top: 12px;">Prev</at-button>
-<at-button type="primary" @click="next" style="margin-top: 12px;">Next</at-button>
+<net-button type="primary" @click="prev" style="margin-top: 12px;">Prev</net-button>
+<net-button type="primary" @click="next" style="margin-top: 12px;">Next</net-button>
 
 <script>
   export default {
@@ -112,14 +112,14 @@
 
 :::demo
 ```html
-<at-steps :current='current' direction="vertical">
-  <at-step title="Step1" description="This is a description."></at-step>
-  <at-step title="Step2" description="This is a description."></at-step>
-  <at-step title="Step3" description="This is a description."></at-step>
-</at-steps>
+<net-steps :current='current' direction="vertical">
+  <net-step title="Step1" description="This is a description."></net-step>
+  <net-step title="Step2" description="This is a description."></net-step>
+  <net-step title="Step3" description="This is a description."></net-step>
+</net-steps>
 
-<at-button type="primary" @click="prev" style="margin-top: 12px;">Prev</at-button>
-<at-button type="primary" @click="next" style="margin-top: 12px;">Next</at-button>
+<net-button type="primary" @click="prev" style="margin-top: 12px;">Prev</net-button>
+<net-button type="primary" @click="next" style="margin-top: 12px;">Next</net-button>
 ```
 :::
 
@@ -129,14 +129,14 @@
 
 :::demo
 ```html
-<at-steps :current='current' size="small" direction="vertical">
-  <at-step title="Step1" description="This is a description."></at-step>
-  <at-step title="Step2" description="This is a description."></at-step>
-  <at-step title="Step3" description="This is a description."></at-step>
-</at-steps>
+<net-steps :current='current' size="small" direction="vertical">
+  <net-step title="Step1" description="This is a description."></net-step>
+  <net-step title="Step2" description="This is a description."></net-step>
+  <net-step title="Step3" description="This is a description."></net-step>
+</net-steps>
 
-<at-button type="primary" @click="prev" style="margin-top: 12px;">Prev</at-button>
-<at-button type="primary" @click="next" style="margin-top: 12px;">Next</at-button>
+<net-button type="primary" @click="prev" style="margin-top: 12px;">Prev</net-button>
+<net-button type="primary" @click="next" style="margin-top: 12px;">Next</net-button>
 ```
 :::
 
@@ -146,14 +146,14 @@
 
 :::demo
 ```html
-<at-steps :current='current' status="error">
-  <at-step title="Step1" description="This is a description."></at-step>
-  <at-step title="Step2" description="This is a description."></at-step>
-  <at-step title="Step3"></at-step>
-</at-steps>
+<net-steps :current='current' status="error">
+  <net-step title="Step1" description="This is a description."></net-step>
+  <net-step title="Step2" description="This is a description."></net-step>
+  <net-step title="Step3"></net-step>
+</net-steps>
 
-<at-button type="primary" @click="prev" style="margin-top: 12px;">Prev</at-button>
-<at-button type="primary" @click="next" style="margin-top: 12px;">Next</at-button>
+<net-button type="primary" @click="prev" style="margin-top: 12px;">Prev</net-button>
+<net-button type="primary" @click="next" style="margin-top: 12px;">Next</net-button>
 ```
 :::
 

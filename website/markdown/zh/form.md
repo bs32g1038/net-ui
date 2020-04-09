@@ -10,25 +10,25 @@
 :::demo
 
 ```html
-<at-form :model="formLogin" :rules="ruleLogin" ref="formLogin">
-  <at-form-item prop="username">
-    <at-input v-model="formLogin.username" placeholder="用户名">
+<net-form :model="formLogin" :rules="ruleLogin" ref="formLogin">
+  <net-form-item prop="username">
+    <net-input v-model="formLogin.username" placeholder="用户名">
       <template slot="prepend">
         <i class="icon icon-link"></i>
       </template>
-    </at-input>
-  </at-form-item>
-  <at-form-item prop="password">
-    <at-input v-model="formLogin.password" placeholder="密码">
+    </net-input>
+  </net-form-item>
+  <net-form-item prop="password">
+    <net-input v-model="formLogin.password" placeholder="密码">
       <template slot="prepend">
         <i class="icon icon-link"></i>
       </template>
-    </at-input>
-  </at-form-item>
-  <at-form-item>
-    <at-button type="primary" size="small" @click.prevent="handleSubmit('formLogin')">登录</at-button>
-  </at-form-item>
-</at-form>
+    </net-input>
+  </net-form-item>
+  <net-form-item>
+    <net-button type="primary" size="small" @click.prevent="handleSubmit('formLogin')">登录</net-button>
+  </net-form-item>
+</net-form>
 ```
 
 :::
@@ -95,7 +95,7 @@
 </script>
 
 <style lang="scss" scoped>
-.at-input {
+.net-input {
   width: 200px;
 }
 </style>

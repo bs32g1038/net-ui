@@ -8,10 +8,10 @@
 
 :::demo
 ```html
-<at-tag>标签一</at-tag>
-<at-tag>标签二</at-tag>
-<at-tag>标签三</at-tag>
-<at-tag name="标签四" closable v-if="show" @on-close="handleClose">标签四</at-tag>
+<net-tag>标签一</net-tag>
+<net-tag>标签二</net-tag>
+<net-tag>标签三</net-tag>
+<net-tag name="标签四" closable v-if="show" @on-close="handleClose">标签四</net-tag>
 ```
 :::
 
@@ -21,13 +21,13 @@
 
 :::demo
 ```html
-<at-tag color="default">标签一</at-tag>
-<at-tag color="primary">标签二</at-tag>
-<at-tag color="success">标签三</at-tag>
-<at-tag color="error">标签四</at-tag>
-<at-tag color="warning">标签五</at-tag>
-<at-tag color="info">标签六</at-tag>
-<at-tag color="#ecefce">#ecefce</at-tag>
+<net-tag color="default">标签一</net-tag>
+<net-tag color="primary">标签二</net-tag>
+<net-tag color="success">标签三</net-tag>
+<net-tag color="error">标签四</net-tag>
+<net-tag color="warning">标签五</net-tag>
+<net-tag color="info">标签六</net-tag>
+<net-tag color="#ecefce">#ecefce</net-tag>
 ```
 :::
 

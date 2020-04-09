@@ -10,10 +10,10 @@
 
 :::demo
 ```html
-<at-progress :percent="0"></at-progress>
-<at-progress :percent="60"></at-progress>
-<at-progress :percent="100"></at-progress>
-<at-progress :percent="50" status="error"></at-progress>
+<net-progress :percent="0"></net-progress>
+<net-progress :percent="60"></net-progress>
+<net-progress :percent="100"></net-progress>
+<net-progress :percent="50" status="error"></net-progress>
 ```
 :::
 
@@ -25,10 +25,10 @@
 ```html
 <div class="row no-gutter">
   <div class="col-sm-24 col-md-12">
-    <at-progress :percent="0" :stroke-width="4"></at-progress>
-    <at-progress :percent="60" :stroke-width="4"></at-progress>
-    <at-progress :percent="100" :stroke-width="4"></at-progress>
-    <at-progress :percent="50" status="error" :stroke-width="4"></at-progress>
+    <net-progress :percent="0" :stroke-width="4"></net-progress>
+    <net-progress :percent="60" :stroke-width="4"></net-progress>
+    <net-progress :percent="100" :stroke-width="4"></net-progress>
+    <net-progress :percent="50" status="error" :stroke-width="4"></net-progress>
   </div>
 </div>
 ```
@@ -40,11 +40,11 @@
 
 :::demo
 ```html
-<at-progress :percent="percent"></at-progress>
-<at-button-group size="small">
-  <at-button @click="descPercent"><i class="icon icon-minus"></i></at-button>
-  <at-button @click="inscPercent"><i class="icon icon-plus"></i></at-button>
-</at-button-group>
+<net-progress :percent="percent"></net-progress>
+<net-button-group size="small">
+  <net-button @click="descPercent"><i class="icon icon-minus"></i></net-button>
+  <net-button @click="inscPercent"><i class="icon icon-plus"></i></net-button>
+</net-button-group>
 
 <script>
   export default {
@@ -83,7 +83,7 @@
 | on-status-success | 进度到 `100%` 时触发 | 触发时 `percent` 的值 |
 
 <style lang="scss" scoped>
-.at-progress {
+.net-progress {
   margin-bottom: 8px;
 }
 </style>

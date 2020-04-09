@@ -9,17 +9,17 @@
 
 :::demo
 ```html
-<at-tabs>
-  <at-tab-pane label="Tab1" name="name1">
+<net-tabs>
+  <net-tab-pane label="Tab1" name="name1">
     <p>Content of Tab Pane 1</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab2" name="name2">
+  </net-tab-pane>
+  <net-tab-pane label="Tab2" name="name2">
     <p>Content of Tab Pane 2</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab3" name="name3">
+  </net-tab-pane>
+  <net-tab-pane label="Tab3" name="name3">
     <p>Content of Tab Pane 3</p>
-  </at-tab-pane>
-</at-tabs>
+  </net-tab-pane>
+</net-tabs>
 ```
 :::
 
@@ -30,17 +30,17 @@
 
 :::demo
 ```html
-<at-tabs>
-  <at-tab-pane label="Tab1" name="name1">
+<net-tabs>
+  <net-tab-pane label="Tab1" name="name1">
     <p>Content of Tab Pane 1</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab2" name="name2">
+  </net-tab-pane>
+  <net-tab-pane label="Tab2" name="name2">
     <p>Content of Tab Pane 2</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab3" name="name3" :disabled="true">
+  </net-tab-pane>
+  <net-tab-pane label="Tab3" name="name3" :disabled="true">
     <p>Content of Tab Pane 3</p>
-  </at-tab-pane>
-</at-tabs>
+  </net-tab-pane>
+</net-tabs>
 ```
 :::
 
@@ -50,17 +50,17 @@
 
 :::demo
 ```html
-<at-tabs>
-  <at-tab-pane label="Tab1" name="name1" icon="icon-github">
+<net-tabs>
+  <net-tab-pane label="Tab1" name="name1" icon="icon-github">
     <p>Content of Tab Pane 1</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab2" name="name2" icon="icon-twitter">
+  </net-tab-pane>
+  <net-tab-pane label="Tab2" name="name2" icon="icon-twitter">
     <p>Content of Tab Pane 2</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab3" name="name3" icon="icon-pocket">
+  </net-tab-pane>
+  <net-tab-pane label="Tab3" name="name3" icon="icon-pocket">
     <p>Content of Tab Pane 3</p>
-  </at-tab-pane>
-</at-tabs>
+  </net-tab-pane>
+</net-tabs>
 ```
 :::
 
@@ -70,20 +70,20 @@
 
 :::demo
 ```html
-<at-tabs>
-  <at-tab-pane label="Tab1" name="name1">
+<net-tabs>
+  <net-tab-pane label="Tab1" name="name1">
     <p>Content of Tab Pane 1</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab2" name="name2">
+  </net-tab-pane>
+  <net-tab-pane label="Tab2" name="name2">
     <p>Content of Tab Pane 2</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab3" name="name3">
+  </net-tab-pane>
+  <net-tab-pane label="Tab3" name="name3">
     <p>Content of Tab Pane 3</p>
-  </at-tab-pane>
+  </net-tab-pane>
   <div slot="extra">
-    <at-button size="small">额外内容</at-button>
+    <net-button size="small">额外内容</net-button>
   </div>
-</at-tabs>
+</net-tabs>
 ```
 :::
 
@@ -93,20 +93,20 @@
 
 :::demo
 ```html
-<at-tabs size="small">
-  <at-tab-pane label="Tab1" name="name1">
+<net-tabs size="small">
+  <net-tab-pane label="Tab1" name="name1">
     <p>Content of Tab Pane 1</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab2" name="name2">
+  </net-tab-pane>
+  <net-tab-pane label="Tab2" name="name2">
     <p>Content of Tab Pane 2</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab3" name="name3">
+  </net-tab-pane>
+  <net-tab-pane label="Tab3" name="name3">
     <p>Content of Tab Pane 3</p>
-  </at-tab-pane>
+  </net-tab-pane>
   <div slot="extra">
-    <at-button size="small">额外内容</at-button>
+    <net-button size="small">额外内容</net-button>
   </div>
-</at-tabs>
+</net-tabs>
 ```
 :::
 
@@ -116,20 +116,20 @@
 
 :::demo
 ```html
-<at-tabs type="card" v-model="activeKey">
-  <at-tab-pane label="Tab1" name="name1">
+<net-tabs type="card" v-model="activeKey">
+  <net-tab-pane label="Tab1" name="name1">
     <p>Content of Tab Pane 1</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab2" name="name2">
+  </net-tab-pane>
+  <net-tab-pane label="Tab2" name="name2">
     <p>Content of Tab Pane 2</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab3" name="name3">
+  </net-tab-pane>
+  <net-tab-pane label="Tab3" name="name3">
     <p>Content of Tab Pane 3</p>
-  </at-tab-pane>
+  </net-tab-pane>
   <div slot="extra">
-    <at-button size="small">额外内容</at-button>
+    <net-button size="small">额外内容</net-button>
   </div>
-</at-tabs>
+</net-tabs>
 ```
 :::
 
@@ -139,20 +139,20 @@
 
 :::demo
 ```html
-<at-tabs type="card" v-model="activeKey" size="small">
-  <at-tab-pane label="Tab1" name="name1">
+<net-tabs type="card" v-model="activeKey" size="small">
+  <net-tab-pane label="Tab1" name="name1">
     <p>Content of Tab Pane 1</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab2" name="name2">
+  </net-tab-pane>
+  <net-tab-pane label="Tab2" name="name2">
     <p>Content of Tab Pane 2</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab3" name="name3">
+  </net-tab-pane>
+  <net-tab-pane label="Tab3" name="name3">
     <p>Content of Tab Pane 3</p>
-  </at-tab-pane>
+  </net-tab-pane>
   <div slot="extra">
-    <at-button size="small">额外内容</at-button>
+    <net-button size="small">额外内容</net-button>
   </div>
-</at-tabs>
+</net-tabs>
 ```
 :::
 
@@ -162,36 +162,36 @@
 
 :::demo
 ```html
-<at-tabs :animated="false" v-model="activeKey">
-  <at-tab-pane label="Tab1" name="name1">
+<net-tabs :animated="false" v-model="activeKey">
+  <net-tab-pane label="Tab1" name="name1">
     <p>Content of Tab Pane 1</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab2" name="name2">
+  </net-tab-pane>
+  <net-tab-pane label="Tab2" name="name2">
     <p>Content of Tab Pane 2</p>
-  </at-tab-pane>
-  <at-tab-pane label="Tab3" name="name3">
+  </net-tab-pane>
+  <net-tab-pane label="Tab3" name="name3">
     <p>Content of Tab Pane 3</p>
-  </at-tab-pane>
-</at-tabs>
+  </net-tab-pane>
+</net-tabs>
 ```
 :::
 
 ## 新增和关闭页签
 
-可以动态增加或关闭标签，但需要监听 `on-tab-remove` 事件，手动删除 `at-tab-pane`
+可以动态增加或关闭标签，但需要监听 `on-tab-remove` 事件，手动删除 `net-tab-pane`
 
 :::demo
 ```html
-<at-tabs :animated="false" value="tab6" closable @on-tab-remove="removeHandle">
-  <at-tab-pane
+<net-tabs :animated="false" value="tab6" closable @on-tab-remove="removeHandle">
+  <net-tab-pane
     v-for="(item, index) in tabList" :key="index"
     :label="item.label" :name="item.name" :unclosable="index === 0 ? true : false">
     <p>{{ item.content }}</p>
-  </at-tab-pane>
+  </net-tab-pane>
   <div slot="extra">
-    <at-button size="small" @click="addHandle">添加</at-button>
+    <net-button size="small" @click="addHandle">添加</net-button>
   </div>
-</at-tabs>
+</net-tabs>
 
 <script>
   export default {

@@ -14,7 +14,7 @@ function isDom(obj) {
         : obj && typeof obj === 'object' && obj.nodeType === 1 && typeof obj.nodeName === 'string';
 }
 
-export default function (Vue) {
+export default function(Vue) {
     const clipboard = {};
     const DEFAULTKEY = 'DEFAULT';
 
@@ -59,7 +59,7 @@ export default function (Vue) {
             const events = listeners || on;
 
             if (events && typeof events === 'object' && Object.keys(events).length) {
-                Object.keys(events).map((cb) => clipboard[key].on(cb, events[cb].fn || events[cb].fns));
+                Object.keys(events).map(cb => clipboard[key].on(cb, events[cb].fn || events[cb].fns));
             }
 
             return clipboard[key];

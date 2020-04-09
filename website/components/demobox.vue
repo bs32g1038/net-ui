@@ -1,27 +1,29 @@
 <template>
-    <div class="at-component__container">
-        <div class="at-component__sample">
+    <div class="net-component__container">
+        <div class="net-component__sample">
             <slot name="demo"></slot>
         </div>
         <collapse-transition>
-            <div class="at-component__code" v-show="isShow">
+            <div class="net-component__code" v-show="isShow">
                 <slot name="source-code"></slot>
                 <span
                     class="btn-copy"
                     v-clipboard="
                         $slots['source-code'][0] &&
-                        $slots['source-code'][0].elm &&
-                        $slots['source-code'][0].elm.innerText
+                            $slots['source-code'][0].elm &&
+                            $slots['source-code'][0].elm.innerText
                     "
                     @success="handleCopySuccess"
                     ><i class="icon icon-clipboard"></i
                 ></span>
             </div>
         </collapse-transition>
-        <a v-if="lang === 'en'" class="at-component__code-toggle" @click="isShow = !isShow">{{
+        <a v-if="lang === 'en'" class="net-component__code-toggle" @click="isShow = !isShow">{{
             isShow ? 'Hide Code' : 'Show Code'
         }}</a>
-        <a v-else class="at-component__code-toggle" @click="isShow = !isShow">{{ isShow ? '隐藏代码' : '显示代码' }}</a>
+        <a v-else class="net-component__code-toggle" @click="isShow = !isShow">{{
+            isShow ? '隐藏代码' : '显示代码'
+        }}</a>
     </div>
 </template>
 
@@ -64,7 +66,7 @@ export default {
         cursor: pointer;
     }
 }
-.at-component__code:hover {
+.net-component__code:hover {
     .btn-copy {
         display: block;
         animation: fadeIn 0.3s both;

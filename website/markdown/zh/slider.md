@@ -11,7 +11,7 @@
 
 :::demo
 ```html
-<at-slider v-model="value"></at-slider>
+<net-slider v-model="value"></net-slider>
 ```
 :::
 
@@ -21,7 +21,7 @@
 
 :::demo
 ```html
-<at-slider v-model="value2" disabled></at-slider>
+<net-slider v-model="value2" disabled></net-slider>
 ```
 :::
 
@@ -31,7 +31,7 @@
 
 :::demo
 ```html
-<at-slider v-model="value3" :min="20" :max="80"></at-slider>
+<net-slider v-model="value3" :min="20" :max="80"></net-slider>
 ```
 :::
 
@@ -41,7 +41,7 @@
 
 :::demo
 ```html
-<at-slider v-model="value4" :step="10"></at-slider>
+<net-slider v-model="value4" :step="10"></net-slider>
 ```
 :::
 

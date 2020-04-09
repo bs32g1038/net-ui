@@ -1,7 +1,7 @@
 {
   "name": "@net-ui/docs",
   "version": "1.0.0",
-  "description": "My breathtaking Nuxt.js project",
+  "description": "a net-ui doc website",
   "author": "bs32g1038",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "net-ui": "^1.0.0-alpha.0",
-    "net-ui-style": "^1.0.0-alpha.0",
+    "net-ui-theme": "^1.0.0-alpha.0",
     "nuxt": "^2.12.1",
     "vue-router": "^3.1.6"
   },

@@ -35,9 +35,9 @@ Only display the title, or title and content, will be closed after `4s`.
 :::demo
 ```html
 <p class="demo-desc">this.$Notify({ title: 'Here is Title' })</p>
-<at-button @click="open">Open Notification (Title)</at-button>
+<net-button @click="open">Open Notification (Title)</net-button>
 <p class="demo-desc">this.$Notify({ title: 'Here is Title', message: 'Here is Content~~~' })</p>
-<at-button @click="open2">Open Notification (Title and Content)</at-button>
+<net-button @click="open2">Open Notification (Title and Content)</net-button>
 
 <script>
   export default {
@@ -67,9 +67,9 @@ Customize message display duration by `duration` property default `4000`. You ca
 :::demo
 ```html
 <p class="demo-desc">this.$Notify({ title: 'Here is Title', message: 'Here is Content~~~', duration: 2000 })</p>
-<at-button @click="open3">Dismiss After 2s</at-button>
+<net-button @click="open3">Dismiss After 2s</net-button>
 <p class="demo-desc">this.$Notify({ title: 'Here is Title', message: 'Here is Content~~~', duration: 0 })</p>
-<at-button @click="open4">Dismiss Manually</at-button>
+<net-button @click="open4">Dismiss Manually</net-button>
 
 <script>
   export default {
@@ -101,10 +101,10 @@ There are four type of Notification: `success`，`Error`，`Warning`，`Info`
 
 :::demo
 ```html
-<at-button @click="open5('success')">Success</at-button>
-<at-button @click="open5('error')">Error</at-button>
-<at-button @click="open5('warning')">Warning</at-button>
-<at-button @click="open5('info')">Info</at-button>
+<net-button @click="open5('success')">Success</net-button>
+<net-button @click="open5('error')">Error</net-button>
+<net-button @click="open5('warning')">Warning</net-button>
+<net-button @click="open5('info')">Info</net-button>
 
 <script>
   export default {
@@ -128,7 +128,7 @@ There are four type of Notification: `success`，`Error`，`Warning`，`Info`
 :::demo
 ```html
 <p class="demo-desc">this.$Notify.success({ title: 'Here is Title', message: 'Here is Content~~~' })</p>
-<at-button @click="open6">Success</at-button>
+<net-button @click="open6">Success</net-button>
 
 <script>
   export default {
@@ -152,7 +152,7 @@ By default, click the close button to dismiss the notification, or you can use g
 
 :::demo
 ```html
-<at-button @click="open7">Global Click to Close</at-button>
+<net-button @click="open7">Global Click to Close</net-button>
 
 <script>
   export default {

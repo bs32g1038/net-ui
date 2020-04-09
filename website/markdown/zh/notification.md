@@ -35,9 +35,9 @@
 :::demo
 ```html
 <p class="demo-desc">this.$Notify({ title: '这里是标题' })</p>
-<at-button @click="open">打开通知（仅标题）</at-button>
+<net-button @click="open">打开通知（仅标题）</net-button>
 <p class="demo-desc">this.$Notify({ title: '这里是标题', message: '这里是内容，文案~~~' })</p>
-<at-button @click="open2">打开通知（标题和内容）</at-button>
+<net-button @click="open2">打开通知（标题和内容）</net-button>
 
 <script>
   export default {
@@ -67,9 +67,9 @@
 :::demo
 ```html
 <p class="demo-desc">this.$Notify({ title: '这里是标题', message: '这里是内容，文案~~~', duration: 2000 })</p>
-<at-button @click="open3">两秒关闭</at-button>
+<net-button @click="open3">两秒关闭</net-button>
 <p class="demo-desc">this.$Notify({ title: '这里是标题', message: '这里是内容，文案~~~', duration: 0 })</p>
-<at-button @click="open4">手动关闭</at-button>
+<net-button @click="open4">手动关闭</net-button>
 
 <script>
   export default {
@@ -101,10 +101,10 @@
 
 :::demo
 ```html
-<at-button @click="open5('success')">Success</at-button>
-<at-button @click="open5('error')">Error</at-button>
-<at-button @click="open5('warning')">Warning</at-button>
-<at-button @click="open5('info')">Info</at-button>
+<net-button @click="open5('success')">Success</net-button>
+<net-button @click="open5('error')">Error</net-button>
+<net-button @click="open5('warning')">Warning</net-button>
+<net-button @click="open5('info')">Info</net-button>
 
 <script>
   export default {
@@ -128,7 +128,7 @@
 :::demo
 ```html
 <p class="demo-desc">this.$Notify.success({ title: '这里是标题', message: '这里是内容，文案~~~' })</p>
-<at-button @click="open6">Success</at-button>
+<net-button @click="open6">Success</net-button>
 
 <script>
   export default {
@@ -152,7 +152,7 @@
 
 :::demo
 ```html
-<at-button @click="open7">全局点击关闭</at-button>
+<net-button @click="open7">全局点击关闭</net-button>
 
 <script>
   export default {

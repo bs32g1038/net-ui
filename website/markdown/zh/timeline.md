@@ -9,12 +9,12 @@
 
 :::demo
 ```html
-<at-timeline>
-  <at-timeline-item><p>刷牙洗脸</p></at-timeline-item>
-  <at-timeline-item><p>吃早餐</p></at-timeline-item>
-  <at-timeline-item><p>上班</p></at-timeline-item>
-  <at-timeline-item><p>睡觉</p></at-timeline-item>
-</at-timeline>
+<net-timeline>
+  <net-timeline-item><p>刷牙洗脸</p></net-timeline-item>
+  <net-timeline-item><p>吃早餐</p></net-timeline-item>
+  <net-timeline-item><p>上班</p></net-timeline-item>
+  <net-timeline-item><p>睡觉</p></net-timeline-item>
+</net-timeline>
 ```
 :::
 
@@ -24,12 +24,12 @@
 
 :::demo
 ```html
-<at-timeline>
-  <at-timeline-item color="blue"><p>刷牙洗脸</p></at-timeline-item>
-  <at-timeline-item color="green"><p>吃早餐</p></at-timeline-item>
-  <at-timeline-item color="red"><p>上班</p></at-timeline-item>
-  <at-timeline-item color="yellow"><p>睡觉</p></at-timeline-item>
-</at-timeline>
+<net-timeline>
+  <net-timeline-item color="blue"><p>刷牙洗脸</p></net-timeline-item>
+  <net-timeline-item color="green"><p>吃早餐</p></net-timeline-item>
+  <net-timeline-item color="red"><p>上班</p></net-timeline-item>
+  <net-timeline-item color="yellow"><p>睡觉</p></net-timeline-item>
+</net-timeline>
 ```
 :::
 
@@ -39,12 +39,12 @@
 
 :::demo
 ```html
-<at-timeline pending>
-  <at-timeline-item><p>刷牙洗脸</p></at-timeline-item>
-  <at-timeline-item><p>吃早餐</p></at-timeline-item>
-  <at-timeline-item><p>上班</p></at-timeline-item>
-  <at-timeline-item><p>睡觉</p></at-timeline-item>
-</at-timeline>
+<net-timeline pending>
+  <net-timeline-item><p>刷牙洗脸</p></net-timeline-item>
+  <net-timeline-item><p>吃早餐</p></net-timeline-item>
+  <net-timeline-item><p>上班</p></net-timeline-item>
+  <net-timeline-item><p>睡觉</p></net-timeline-item>
+</net-timeline>
 ```
 :::
 
@@ -54,24 +54,24 @@
 
 :::demo
 ```html
-<at-timeline>
-  <at-timeline-item color="blue">
+<net-timeline>
+  <net-timeline-item color="blue">
     <i slot="dot" class="icon icon-github"></i>
     <p>刷牙洗脸</p>
-  </at-timeline-item>
-  <at-timeline-item color="green">
+  </net-timeline-item>
+  <net-timeline-item color="green">
     <i slot="dot" class="icon icon-zap"></i>
     <p>吃早餐</p>
-  </at-timeline-item>
-  <at-timeline-item color="red">
+  </net-timeline-item>
+  <net-timeline-item color="red">
     <i slot="dot" class="icon icon-award"></i>
     <p>上班</p>
-  </at-timeline-item>
-  <at-timeline-item color="yellow">
+  </net-timeline-item>
+  <net-timeline-item color="yellow">
     <i slot="dot" class="icon icon-watch"></i>
     <p>睡觉</p>
-  </at-timeline-item>
-</at-timeline>
+  </net-timeline-item>
+</net-timeline>
 ```
 :::
 

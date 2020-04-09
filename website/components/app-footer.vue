@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss">
-@import 'net-ui-style/src/variables/index.scss';
+@import 'net-ui-theme/src/variables/index.scss';
 @import '../assets/style/mixin';
 
 /**

@@ -1,8 +1,0 @@
-{
-    "bundlerOptions": {
-        "entryFile": "./src/index.scss",
-        "rootDir": ".",
-        "outFile": "./css/at.scss",
-        "logLevel": "silent"
-    }
-}

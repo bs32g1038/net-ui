@@ -9,12 +9,12 @@ Basic timeline.
 
 :::demo
 ```html
-<at-timeline>
-  <at-timeline-item><p>Brush teeth and wash face</p></at-timeline-item>
-  <at-timeline-item><p>Have breakfast</p></at-timeline-item>
-  <at-timeline-item><p>Work</p></at-timeline-item>
-  <at-timeline-item><p>Sleep</p></at-timeline-item>
-</at-timeline>
+<net-timeline>
+  <net-timeline-item><p>Brush teeth and wash face</p></net-timeline-item>
+  <net-timeline-item><p>Have breakfast</p></net-timeline-item>
+  <net-timeline-item><p>Work</p></net-timeline-item>
+  <net-timeline-item><p>Sleep</p></net-timeline-item>
+</net-timeline>
 ```
 :::
 
@@ -24,12 +24,12 @@ Set the color of circles. green means completed or success status, red means err
 
 :::demo
 ```html
-<at-timeline>
-  <at-timeline-item color="blue"><p>Brush teeth and wash face</p></at-timeline-item>
-  <at-timeline-item color="green"><p>Have breakfast</p></at-timeline-item>
-  <at-timeline-item color="red"><p>Work</p></at-timeline-item>
-  <at-timeline-item color="yellow"><p>Sleep</p></at-timeline-item>
-</at-timeline>
+<net-timeline>
+  <net-timeline-item color="blue"><p>Brush teeth and wash face</p></net-timeline-item>
+  <net-timeline-item color="green"><p>Have breakfast</p></net-timeline-item>
+  <net-timeline-item color="red"><p>Work</p></net-timeline-item>
+  <net-timeline-item color="yellow"><p>Sleep</p></net-timeline-item>
+</net-timeline>
 ```
 :::
 
@@ -39,12 +39,12 @@ When the timeline is incomplete and ongoing, put a ghost item at last.
 
 :::demo
 ```html
-<at-timeline pending>
-  <at-timeline-item><p>Brush teeth and wash face</p></at-timeline-item>
-  <at-timeline-item><p>Have breakfast</p></at-timeline-item>
-  <at-timeline-item><p>Work</p></at-timeline-item>
-  <at-timeline-item><p>Sleep</p></at-timeline-item>
-</at-timeline>
+<net-timeline pending>
+  <net-timeline-item><p>Brush teeth and wash face</p></net-timeline-item>
+  <net-timeline-item><p>Have breakfast</p></net-timeline-item>
+  <net-timeline-item><p>Work</p></net-timeline-item>
+  <net-timeline-item><p>Sleep</p></net-timeline-item>
+</net-timeline>
 ```
 :::
 
@@ -54,24 +54,24 @@ Accepts a `slot` to customize the timeline item's content, such as the icon.
 
 :::demo
 ```html
-<at-timeline>
-  <at-timeline-item color="blue">
+<net-timeline>
+  <net-timeline-item color="blue">
     <i slot="dot" class="icon icon-github"></i>
     <p>Brush teeth and wash face</p>
-  </at-timeline-item>
-  <at-timeline-item color="green">
+  </net-timeline-item>
+  <net-timeline-item color="green">
     <i slot="dot" class="icon icon-zap"></i>
     <p>Have breakfast</p>
-  </at-timeline-item>
-  <at-timeline-item color="red">
+  </net-timeline-item>
+  <net-timeline-item color="red">
     <i slot="dot" class="icon icon-award"></i>
     <p>Work</p>
-  </at-timeline-item>
-  <at-timeline-item color="yellow">
+  </net-timeline-item>
+  <net-timeline-item color="yellow">
     <i slot="dot" class="icon icon-watch"></i>
     <p>Sleep</p>
-  </at-timeline-item>
-</at-timeline>
+  </net-timeline-item>
+</net-timeline>
 ```
 :::
 

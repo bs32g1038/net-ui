@@ -9,9 +9,9 @@ Do not wrap any elements, similar to the `Tag` component.
 
 :::demo
 ```html
-<at-badge :value="3"></at-badge>
-<at-badge :value="23"></at-badge>
-<at-badge :value="199"></at-badge>
+<net-badge :value="3"></net-badge>
+<net-badge :value="23"></net-badge>
+<net-badge :value="199"></net-badge>
 ```
 :::
 
@@ -21,8 +21,8 @@ Content can be either digital or text.
 
 :::demo
 ```html
-<at-badge value="new"></at-badge>
-<at-badge value="hot"></at-badge>
+<net-badge value="new"></net-badge>
+<net-badge value="hot"></net-badge>
 ```
 :::
 
@@ -33,10 +33,10 @@ There are four status of Badge: `primary`, `success`, `warning`, `info`.
 
 :::demo
 ```html
-Primary <at-badge value="123"></at-badge><br>
-Success <at-badge value="123" status="success"></at-badge><br>
-Warning <at-badge value="123" status="warning"></at-badge><br>
-Info <at-badge value="123" status="info"></at-badge>
+Primary <net-badge value="123"></net-badge><br>
+Success <net-badge value="123" status="success"></net-badge><br>
+Warning <net-badge value="123" status="warning"></net-badge><br>
+Info <net-badge value="123" status="info"></net-badge>
 ```
 :::
 
@@ -46,7 +46,7 @@ Use `max-num` property to customize the maximum of Badge, exceed the maximum val
 
 :::demo
 ```html
-<at-badge :value="123" :max-num="99"></at-badge>
+<net-badge :value="123" :max-num="99"></net-badge>
 ```
 :::
 
@@ -56,15 +56,15 @@ Combine with other components to display the amount of messages.
 
 :::demo
 ```html
-<at-badge value="3">
-  <at-button>Reply</at-button>
-</at-badge>
-<at-badge :value="111" :max-num="99">
-  <at-button>Reply</at-button>
-</at-badge>
-<at-badge value="new">
-  <at-button>Reply</at-button>
-</at-badge>
+<net-badge value="3">
+  <net-button>Reply</net-button>
+</net-badge>
+<net-badge :value="111" :max-num="99">
+  <net-button>Reply</net-button>
+</net-badge>
+<net-badge value="new">
+  <net-button>Reply</net-button>
+</net-badge>
 ```
 :::
 
@@ -74,16 +74,16 @@ This will simply display a red badge without a specific count.
 
 :::demo
 ```html
-<at-badge :value="12" dot></at-badge>
-<at-badge :value="12" dot>
-  <at-button>Reply</at-button>
-</at-badge>
-<at-badge :value="12" dot>
+<net-badge :value="12" dot></net-badge>
+<net-badge :value="12" dot>
+  <net-button>Reply</net-button>
+</net-badge>
+<net-badge :value="12" dot>
   <i class="icon icon-inbox"></i>
-</at-badge>
-<at-badge :value="12" dot>
+</net-badge>
+<net-badge :value="12" dot>
   <span>Message</span>
-</at-badge>
+</net-badge>
 ```
 :::
 
@@ -93,18 +93,18 @@ The count will be animated as it changes.
 
 :::demo
 ```html
-<at-badge :value="num" :max-num="12">
+<net-badge :value="num" :max-num="12">
   <span class="badge-example"></span>
-</at-badge>
-<at-badge :value="num" :show="show" dot>
+</net-badge>
+<net-badge :value="num" :show="show" dot>
   <span class="badge-example"></span>
-</at-badge>
+</net-badge>
 <br>
-<at-button-group size="small">
-  <at-button @click="num -= 1">-</at-button>
-  <at-button @click="num += 1">+</at-button>
-</at-button-group>
-<at-button size="small" @click="toggleDot">{{show ? 'Hide' : 'Show'}} Badge</at-button>
+<net-button-group size="small">
+  <net-button @click="num -= 1">-</net-button>
+  <net-button @click="num += 1">+</net-button>
+</net-button-group>
+<net-button size="small" @click="toggleDot">{{show ? 'Hide' : 'Show'}} Badge</net-button>
 ```
 :::
 
@@ -143,7 +143,7 @@ export default {
     background: #EEE;
     cursor: pointer;
   }
-  .at-badge + .at-badge {
+  .net-badge + .net-badge {
     margin-left: 24px;
   }
 </style>

@@ -23,10 +23,10 @@
 
 :::demo
 ```html
-<at-button @click="handleClick('info')">Info</at-button>
-<at-button @click="handleClick('success')">Success</at-button>
-<at-button @click="handleClick('warning')">Warning</at-button>
-<at-button @click="handleClick('error')">Error</at-button>
+<net-button @click="handleClick('info')">Info</net-button>
+<net-button @click="handleClick('success')">Success</net-button>
+<net-button @click="handleClick('warning')">Warning</net-button>
+<net-button @click="handleClick('error')">Error</net-button>
 
 <script>
   export default {
@@ -54,7 +54,7 @@
 
 :::demo
 ```html
-<at-button @click="changeDuration">修改延时</at-button>
+<net-button @click="changeDuration">修改延时</net-button>
 
 <script>
   export default {
@@ -77,7 +77,7 @@
 
 :::demo
 ```html
-<at-button @click="showLoading">显示加载中...</at-button>
+<net-button @click="showLoading">显示加载中...</net-button>
 
 <script>
   export default {

@@ -7,15 +7,15 @@ Breadcrumb displays the current location within a hierarchy. It provides a navig
 
 ## Basic
 
-Use `at-breadcrumb` and `at-breadcrumb-item` to create breadcrumbs and add links with `href` property.
+Use `net-breadcrumb` and `net-breadcrumb-item` to create breadcrumbs and add links with `href` property.
 
 :::demo
 ```html
-<at-breadcrumb>
-  <at-breadcrumb-item>Home</at-breadcrumb-item>
-  <at-breadcrumb-item href="#/en/docs/introduction">Components</at-breadcrumb-item>
-  <at-breadcrumb-item>Breadcrumb</at-breadcrumb-item>
-</at-breadcrumb>
+<net-breadcrumb>
+  <net-breadcrumb-item>Home</net-breadcrumb-item>
+  <net-breadcrumb-item href="#/en/docs/introduction">Components</net-breadcrumb-item>
+  <net-breadcrumb-item>Breadcrumb</net-breadcrumb-item>
+</net-breadcrumb>
 ```
 :::
 
@@ -25,12 +25,12 @@ Used together with `vue-router`. Passed an `object` to `to` property. If you don
 
 :::demo
 ```html
-<at-breadcrumb>
-  <at-breadcrumb-item>Home</at-breadcrumb-item>
-  <at-breadcrumb-item :to="{ name: 'Layout-en' }">Layout</at-breadcrumb-item>
-  <at-breadcrumb-item :to="{ name: 'Color-en' }" replace>Color</at-breadcrumb-item>
-  <at-breadcrumb-item>Breadcrumb</at-breadcrumb-item>
-</at-breadcrumb>
+<net-breadcrumb>
+  <net-breadcrumb-item>Home</net-breadcrumb-item>
+  <net-breadcrumb-item :to="{ name: 'Layout-en' }">Layout</net-breadcrumb-item>
+  <net-breadcrumb-item :to="{ name: 'Color-en' }" replace>Color</net-breadcrumb-item>
+  <net-breadcrumb-item>Breadcrumb</net-breadcrumb-item>
+</net-breadcrumb>
 ```
 :::
 
@@ -40,11 +40,11 @@ The separator can be customized by setting the `separator` property, which suppo
 
 :::demo
 ```html
-<at-breadcrumb separator=">">
-  <at-breadcrumb-item>Home</at-breadcrumb-item>
-  <at-breadcrumb-item href="#/en/docs/introduction">Components</at-breadcrumb-item>
-  <at-breadcrumb-item>Breadcrumb</at-breadcrumb-item>
-</at-breadcrumb>
+<net-breadcrumb separator=">">
+  <net-breadcrumb-item>Home</net-breadcrumb-item>
+  <net-breadcrumb-item href="#/en/docs/introduction">Components</net-breadcrumb-item>
+  <net-breadcrumb-item>Breadcrumb</net-breadcrumb-item>
+</net-breadcrumb>
 ```
 :::
 

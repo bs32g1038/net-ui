@@ -11,10 +11,10 @@
 
 :::demo
 ```html
-<at-tooltip placement="top" content="提示信息">
-  <at-button>按钮</at-button>
-</at-tooltip>
-<at-tooltip content="提示信息"><span>一段文字</span></at-tooltip>
+<net-tooltip placement="top" content="提示信息">
+  <net-button>按钮</net-button>
+</net-tooltip>
+<net-tooltip content="提示信息"><span>一段文字</span></net-tooltip>
 ```
 :::
 
@@ -24,13 +24,13 @@
 
 :::demo
 ```html
-<at-tooltip>
+<net-tooltip>
   <span>文字提示</span>
   <template slot="content">
     <p>文字1</p>
     <p>文字2</p>
   </template>
-</at-tooltip>
+</net-tooltip>
 ```
 :::
 
@@ -42,26 +42,26 @@
 ```html
 <div class="show-box">
   <div class="top row col-md-16 flex-center">
-    <at-tooltip class="item" content="Top Left 提示文字" placement="top-left"><at-button>上左</at-button></at-tooltip>
-    <at-tooltip class="item" content="Top 提示文字" placement="top"><at-button>上边</at-button></at-tooltip>
-    <at-tooltip class="item" content="Top Right 提示文字" placement="top-right"><at-button>上右</at-button></at-tooltip>
+    <net-tooltip class="item" content="Top Left 提示文字" placement="top-left"><net-button>上左</net-button></net-tooltip>
+    <net-tooltip class="item" content="Top 提示文字" placement="top"><net-button>上边</net-button></net-tooltip>
+    <net-tooltip class="item" content="Top Right 提示文字" placement="top-right"><net-button>上右</net-button></net-tooltip>
   </div>
   <div class="center row col-md-16 flex-between">
     <div class="left col-md-4">
-      <at-tooltip class="item" content="Left Top 提示文字" placement="left-top"><at-button>左上</at-button></at-tooltip>
-      <at-tooltip class="item" content="Left 提示文字" placement="left"><at-button>左边</at-button></at-tooltip>
-      <at-tooltip class="item" content="Left Bottom 提示文字" placement="left-bottom"><at-button>左下</at-button></at-tooltip>
+      <net-tooltip class="item" content="Left Top 提示文字" placement="left-top"><net-button>左上</net-button></net-tooltip>
+      <net-tooltip class="item" content="Left 提示文字" placement="left"><net-button>左边</net-button></net-tooltip>
+      <net-tooltip class="item" content="Left Bottom 提示文字" placement="left-bottom"><net-button>左下</net-button></net-tooltip>
     </div>
     <div class="right col-md-4">
-      <at-tooltip class="item" content="Right Top 提示文字" placement="right-top"><at-button>右上</at-button></at-tooltip>
-      <at-tooltip class="item" content="Right 提示文字" placement="right"><at-button>右边</at-button></at-tooltip>
-      <at-tooltip class="item" content="Right Bottom 提示文字" placement="right-bottom"><at-button>右下</at-button></at-tooltip>
+      <net-tooltip class="item" content="Right Top 提示文字" placement="right-top"><net-button>右上</net-button></net-tooltip>
+      <net-tooltip class="item" content="Right 提示文字" placement="right"><net-button>右边</net-button></net-tooltip>
+      <net-tooltip class="item" content="Right Bottom 提示文字" placement="right-bottom"><net-button>右下</net-button></net-tooltip>
     </div>
   </div>
   <div class="bottom row col-md-16 flex-center">
-    <at-tooltip class="item" content="Bottom Left 提示文字" placement="bottom-left"><at-button>下左</at-button></at-tooltip>
-    <at-tooltip class="item" content="Bottom 提示文字" placement="bottom"><at-button>下边</at-button></at-tooltip>
-    <at-tooltip class="item" content="Bottom Right 提示文字" placement="bottom-right"><at-button>下右</at-button></at-tooltip>
+    <net-tooltip class="item" content="Bottom Left 提示文字" placement="bottom-left"><net-button>下左</net-button></net-tooltip>
+    <net-tooltip class="item" content="Bottom 提示文字" placement="bottom"><net-button>下边</net-button></net-tooltip>
+    <net-tooltip class="item" content="Bottom Right 提示文字" placement="bottom-right"><net-button>下右</net-button></net-tooltip>
   </div>
 </div>
 ```
@@ -75,8 +75,8 @@
 | placement | 气泡框位置 | String | `top`, `top-left`, `top-right`, `left`, `left-top`, `left-bottom`, `right`, `right-top`, `right-bottom`, `bottom`, `bottom-left`, `bottom-right` | `top` |
 
 <style lang="scss" scoped>
-.at-tooltip {
-  & + .at-tooltip {
+.net-tooltip {
+  & + .net-tooltip {
     margin-left: 16px;
   }
   span {
@@ -90,7 +90,7 @@
 .show-box {
   max-width: 600px;
 
-  .at-tooltip + .at-tooltip {
+  .net-tooltip + .net-tooltip {
     margin: 0;
   }
 }

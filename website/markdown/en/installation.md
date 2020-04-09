@@ -7,24 +7,24 @@
 Recommended use `npm` to development, enjoy the ecosystem of `node` and the chain tool of `webpack`, which brings convenience of development. With the package modules installed by `NPM`, we can easily refer to it in `import` or `require`.
 
 ```bash
-npm install at-ui
+npm install net-ui
 
-npm install at-ui-style
+npm install net-ui-theme
 ```
 
 ## CDN
 
 Can use traditional `<script>` and `<link>` tag for global use.
 
-Get the latest version of `AT-UI` from [jsDelivr](https://www.jsdelivr.com/package/npm/at-ui).
+Get the latest version of `AT-UI` from [jsDelivr](https://www.jsdelivr.com/package/npm/net-ui).
 
 ```html
 <!-- import Vue -->
 <script src="//cdn.jsdelivr.net/npm/vue"></script>
 <!-- import CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/at-ui-style/css/at.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/net-ui-theme/css/at.min.css">
 <!-- import JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/at-ui/dist/at.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/net-ui/dist/at.min.js"></script>
 ```
 
 #### DEMO：
@@ -38,9 +38,9 @@ By using the script tag to import resources, we can quickly write a demo page wi
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>AT-UI Example</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/at-ui-style/css/at.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/net-ui-theme/css/at.min.css">
   <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/at-ui/dist/at.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/net-ui/dist/at.min.js"></script>
   <style>
     #app {
       display: flex;
@@ -52,7 +52,7 @@ By using the script tag to import resources, we can quickly write a demo page wi
 </head>
 <body>
   <div id="app">
-    <at-button @click="showMessage">Show message</at-button>
+    <net-button @click="showMessage">Show message</net-button>
   </div>
 
   <script>

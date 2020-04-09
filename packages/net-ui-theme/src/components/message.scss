@@ -1,0 +1,49 @@
+/**
+ * Message Style
+ */
+@import '../variables/index.scss';
+
+.net-message {
+    display: inline-block;
+    padding: $message-padding;
+    font-size: $message-font-size;
+    line-height: 1.5;
+    border-radius: $border-radius-base;
+    background-color: $message-bg-color;
+    box-shadow: $message-box-shadow;
+    z-index: $zindex-message;
+
+    /* element */
+    &__wrapper {
+        position: fixed;
+        left: 0;
+        top: 16px;
+        width: 100%;
+        text-align: center;
+        transition: opacity 0.3s, transform 0.3s, top 0.4s;
+        pointer-events: none;
+    }
+    &__icon {
+        display: inline-block;
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+
+    /* modifier */
+    &--success .net-message__icon {
+        color: $message-icon-color-success;
+    }
+    &--error .net-message__icon {
+        color: $message-icon-color-error;
+    }
+    &--warning .net-message__icon {
+        color: $message-icon-color-warning;
+    }
+    &--info .net-message__icon {
+        color: $message-icon-color-info;
+    }
+    &--loading .net-message__icon {
+        color: $message-icon-color-loading;
+        animation: icon-loading 2s linear infinite both;
+    }
+}

@@ -11,7 +11,7 @@
 
 :::demo
 ```html
-<at-textarea v-model="inputValue" placeholder="这里是输入框..."></at-textarea>
+<net-textarea v-model="inputValue" placeholder="这里是输入框..."></net-textarea>
 ```
 :::
 
@@ -21,7 +21,7 @@
 
 :::demo
 ```html
-<at-textarea v-model="inputValue" placeholder="这里是输入框..." disabled></at-textarea>
+<net-textarea v-model="inputValue" placeholder="这里是输入框..." disabled></net-textarea>
 ```
 :::
 
@@ -32,7 +32,7 @@
 :::demo
 ```html
 <p class="demo-desc">minRows=2, maxRows=4</p>
-<at-textarea v-model="inputValue2" min-rows="2" max-rows="4" placeholder="这里输入内容，请输入多行"></at-textarea>
+<net-textarea v-model="inputValue2" min-rows="2" max-rows="4" placeholder="这里输入内容，请输入多行"></net-textarea>
 ```
 :::
 
@@ -42,7 +42,7 @@
 
 :::demo
 ```html
-<at-textarea v-model="inputValue3" autosize placeholder="这里输入内容，请输入多行"></at-textarea>
+<net-textarea v-model="inputValue3" autosize placeholder="这里输入内容，请输入多行"></net-textarea>
 ```
 :::
 
@@ -71,8 +71,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .at-textarea {
-    & + .at-textarea {
+  .net-textarea {
+    & + .net-textarea {
       margin-top: 15px;
     }
   }

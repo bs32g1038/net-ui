@@ -89,7 +89,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'net-ui-style/src/variables/index.scss';
+@import 'net-ui-theme/src/variables/index.scss';
 
 $header-height: 80px;
 

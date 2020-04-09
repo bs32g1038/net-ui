@@ -11,7 +11,7 @@
 
 :::demo
 ```html
-<at-switch v-model="check" @change="changeStatus"></at-switch>
+<net-switch v-model="check" @change="changeStatus"></net-switch>
 <span>{{check}}</span>
 ```
 :::
@@ -22,14 +22,14 @@
 
 :::demo
 ```html
-<at-switch>
+<net-switch>
   <span slot="checkedText">开</span>
   <span slot="unCheckedText">关</span>
-</at-switch>
-<at-switch>
+</net-switch>
+<net-switch>
   <span slot="checkedText"><i class="icon icon-left-arrow"></i></span>
   <span slot="unCheckedText"><i class="icon icon-right-arrow"></i></span>
-</at-switch>
+</net-switch>
 ```
 :::
 
@@ -39,15 +39,15 @@
 
 :::demo
 ```html
-<at-switch disabled :value="true">
+<net-switch disabled :value="true">
   <span slot="checkedText">开</span>
   <span slot="unCheckedText">关</span>
-</at-switch>
-<at-switch disabled>
+</net-switch>
+<net-switch disabled>
   <span slot="checkedText">开</span>
   <span slot="unCheckedText">关</span>
-</at-switch>
-<at-switch disabled></at-switch>
+</net-switch>
+<net-switch disabled></net-switch>
 ```
 :::
 
@@ -58,28 +58,28 @@
 :::demo
 ```html
 <div>
-  <at-switch size="small"></at-switch>
-  <at-switch size="small">
+  <net-switch size="small"></net-switch>
+  <net-switch size="small">
     <span slot="checkedText">开</span>
     <span slot="unCheckedText">关</span>
-  </at-switch>
-  <at-switch size="small" disabled></at-switch>
+  </net-switch>
+  <net-switch size="small" disabled></net-switch>
 </div>
 <div style="margin-top: 8px;">
-  <at-switch></at-switch>
-  <at-switch>
+  <net-switch></net-switch>
+  <net-switch>
     <span slot="checkedText">开</span>
     <span slot="unCheckedText">关</span>
-  </at-switch>
-  <at-switch disabled></at-switch>
+  </net-switch>
+  <net-switch disabled></net-switch>
 </div>
 <div style="margin-top: 8px;">
-  <at-switch size="large"></at-switch>
-  <at-switch size="large">
+  <net-switch size="large"></net-switch>
+  <net-switch size="large">
     <span slot="checkedText">开</span>
     <span slot="unCheckedText">关</span>
-  </at-switch size="large">
-  <at-switch size="large" disabled></at-switch>
+  </net-switch size="large">
+  <net-switch size="large" disabled></net-switch>
 </div>
 ```
 :::
@@ -121,7 +121,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.at-switch + .at-switch {
+.net-switch + .net-switch {
   margin-left: 20px;
 }
 </style>

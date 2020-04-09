@@ -14,10 +14,10 @@ The contents of Alert are passed through `message` property.
 
 :::demo
 ```html
-<at-alert message="Here is the information~Here is the information~Here is the information~" type="success"></at-alert>
-<at-alert message="Here is the information~" type="error"></at-alert>
-<at-alert message="Here is the information~" type="warning"></at-alert>
-<at-alert message="Here is the information~" type="info"></at-alert>
+<net-alert message="Here is the information~Here is the information~Here is the information~" type="success"></net-alert>
+<net-alert message="Here is the information~" type="error"></net-alert>
+<net-alert message="Here is the information~" type="warning"></net-alert>
+<net-alert message="Here is the information~" type="info"></net-alert>
 ```
 :::
 
@@ -28,7 +28,7 @@ To make a alert component closable, add `closable` property to the Alert.
 
 :::demo
 ```html
-<at-alert message="Here is the alert that can be closed." closable></at-alert>
+<net-alert message="Here is the alert that can be closed." closable></net-alert>
 ```
 :::
 
@@ -39,7 +39,7 @@ Customize the text or icon of close button by `close-text` property.
 
 :::demo
 ```html
-<at-alert message="Here is the information~" close-text="Close"></at-alert>
+<net-alert message="Here is the information~" close-text="Close"></net-alert>
 ```
 :::
 
@@ -50,7 +50,7 @@ Append Icon before text by `show-icon` property, that can improve readability.
 
 :::demo
 ```html
-<at-alert message="Here is the information with ICON" show-icon></at-alert>
+<net-alert message="Here is the information with ICON" show-icon></net-alert>
 ```
 :::
 
@@ -61,10 +61,10 @@ The text of alert component can contain title and content, which are configured 
 
 :::demo
 ```html
-<at-alert message="Title of Success" description="Here is the information" type="success" closable></at-alert>
-<at-alert message="Title of Error" description="Here is the information" type="error" closable></at-alert>
-<at-alert message="Title of Warning" description="Here is the information" type="warning" closable></at-alert>
-<at-alert message="Title of Info" description="Here is the information" type="info" closable></at-alert>
+<net-alert message="Title of Success" description="Here is the information" type="success" closable></net-alert>
+<net-alert message="Title of Error" description="Here is the information" type="error" closable></net-alert>
+<net-alert message="Title of Warning" description="Here is the information" type="warning" closable></net-alert>
+<net-alert message="Title of Info" description="Here is the information" type="info" closable></net-alert>
 ```
 :::
 
@@ -75,10 +75,10 @@ Multiple properties are used in combination.
 
 :::demo
 ```html
-<at-alert message="Title of Success" description="Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~" type="success" show-icon closable></at-alert>
-<at-alert message="Title of Error" description="Here is the information" type="error" show-icon closable></at-alert>
-<at-alert message="Title of Warning" description="Here is the information" type="warning" show-icon closable></at-alert>
-<at-alert message="Title of Info" description="Here is the information" type="info" show-icon closable></at-alert>
+<net-alert message="Title of Success" description="Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~" type="success" show-icon closable></net-alert>
+<net-alert message="Title of Error" description="Here is the information" type="error" show-icon closable></net-alert>
+<net-alert message="Title of Warning" description="Here is the information" type="warning" show-icon closable></net-alert>
+<net-alert message="Title of Info" description="Here is the information" type="info" show-icon closable></net-alert>
 ```
 :::
 
@@ -104,7 +104,7 @@ Multiple properties are used in combination.
 
 
 <style lang="scss" scoped>
-.at-alert + .at-alert {
+.net-alert + .net-alert {
   margin-top: 8px;
 }
 </style>

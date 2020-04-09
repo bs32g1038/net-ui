@@ -13,10 +13,10 @@ Invoke `$Loading` by thress methods: `start()`、`finish()`、`error()`
 
 :::demo
 ```html
-<at-button @click="start">Start</at-button>
-<at-button @click="finish">Finish</at-button>
-<at-button @click="error">Error</at-button>
-<at-button @click="update">Update</at-button>
+<net-button @click="start">Start</net-button>
+<net-button @click="finish">Finish</net-button>
+<net-button @click="error">Error</net-button>
+<net-button @click="update">Update</net-button>
 
 <script>
   export default {
@@ -60,7 +60,7 @@ this.$Loading.config({
 
 :::demo
 ```html
-<at-button @click="setWidth">{{ btnText }}</at-button>
+<net-button @click="setWidth">{{ btnText }}</net-button>
 ```
 :::
 

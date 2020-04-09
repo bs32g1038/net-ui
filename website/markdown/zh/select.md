@@ -9,23 +9,23 @@
 
 :::demo
 ```html
-<at-select v-model="model1" style="width:100px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州广州广州广州广州广州广州广州广州广州</at-option>
-  <at-option value="3">上海</at-option>
-  <at-option value="4">北京</at-option>
-  <at-option value="5">成都</at-option>
-</at-select>
+<net-select v-model="model1" style="width:100px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州广州广州广州广州广州广州广州广州广州</net-option>
+  <net-option value="3">上海</net-option>
+  <net-option value="4">北京</net-option>
+  <net-option value="5">成都</net-option>
+</net-select>
 
-<at-select v-model="model2" style="width:100px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州</at-option>
-</at-select>
+<net-select v-model="model2" style="width:100px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州</net-option>
+</net-select>
 
-<at-select v-model="model2" disabled style="width:100px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州</at-option>
-</at-select>
+<net-select v-model="model2" disabled style="width:100px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州</net-option>
+</net-select>
 ```
 :::
 
@@ -36,27 +36,27 @@
 
 :::demo
 ```html
-<at-select v-model="model3" size="small" style="width: 100px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州</at-option>
-  <at-option value="3">上海</at-option>
-  <at-option value="4">北京</at-option>
-  <at-option value="5">成都</at-option>
-</at-select>
-<at-select v-model="model3" size="normal" style="width: 100px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州</at-option>
-  <at-option value="3">上海</at-option>
-  <at-option value="4">北京</at-option>
-  <at-option value="5">成都</at-option>
-</at-select>
-<at-select v-model="model3" size="large" style="width: 100px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州</at-option>
-  <at-option value="3">上海</at-option>
-  <at-option value="4">北京</at-option>
-  <at-option value="5">成都</at-option>
-</at-select>
+<net-select v-model="model3" size="small" style="width: 100px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州</net-option>
+  <net-option value="3">上海</net-option>
+  <net-option value="4">北京</net-option>
+  <net-option value="5">成都</net-option>
+</net-select>
+<net-select v-model="model3" size="normal" style="width: 100px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州</net-option>
+  <net-option value="3">上海</net-option>
+  <net-option value="4">北京</net-option>
+  <net-option value="5">成都</net-option>
+</net-select>
+<net-select v-model="model3" size="large" style="width: 100px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州</net-option>
+  <net-option value="3">上海</net-option>
+  <net-option value="4">北京</net-option>
+  <net-option value="5">成都</net-option>
+</net-select>
 ```
 :::
 
@@ -67,13 +67,13 @@
 
 :::demo
 ```html
-<at-select v-model="model4" clearable size="large" style="width: 100px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州</at-option>
-  <at-option value="3">上海</at-option>
-  <at-option value="4">北京</at-option>
-  <at-option value="5">成都</at-option>
-</at-select>
+<net-select v-model="model4" clearable size="large" style="width: 100px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州</net-option>
+  <net-option value="3">上海</net-option>
+  <net-option value="4">北京</net-option>
+  <net-option value="5">成都</net-option>
+</net-select>
 ```
 :::
 
@@ -84,20 +84,20 @@
 
 :::demo
 ```html
-<at-select v-model="model5" style="width: 100px">
-  <at-option-group label="广东省">
-    <at-option value="1">深圳</at-option>
-    <at-option value="2">广州</at-option>
-    <at-option value="3">珠海</at-option>
-  </at-option-group>
-  <at-option-group label="其他">
-    <at-option value="4">上海</at-option>
-    <at-option value="5">北京</at-option>
-    <at-option value="6" disabled>成都</at-option>
-    <at-option value="7">昆明</at-option>
-    <at-option value="8">杭州</at-option>
-  </at-option-group>
-</at-select>
+<net-select v-model="model5" style="width: 100px">
+  <net-option-group label="广东省">
+    <net-option value="1">深圳</net-option>
+    <net-option value="2">广州</net-option>
+    <net-option value="3">珠海</net-option>
+  </net-option-group>
+  <net-option-group label="其他">
+    <net-option value="4">上海</net-option>
+    <net-option value="5">北京</net-option>
+    <net-option value="6" disabled>成都</net-option>
+    <net-option value="7">昆明</net-option>
+    <net-option value="8">杭州</net-option>
+  </net-option-group>
+</net-select>
 ```
 :::
 
@@ -108,13 +108,13 @@
 
 :::demo
 ```html
-<at-select v-model="model6" style="width: 140px">
-  <at-option value="1" label="深圳"><span>深圳</span><span style="float: right;opacity: .6;font-size: 0.8em;">Shenzhen</span></at-option>
-  <at-option value="2" label="广州"><span>广州</span><span style="float: right;opacity: .6;font-size: 0.8em;">Guangzhou</span></at-option>
-  <at-option value="3" label="上海"><span>上海</span><span style="float: right;opacity: .6;font-size: 0.8em;">Shanghai</span></at-option>
-  <at-option value="4" label="北京"><span>北京</span><span style="float: right;opacity: .6;font-size: 0.8em;">Beijin</span></at-option>
-  <at-option value="5" label="成都"><span>成都</span><span style="float: right;opacity: .6;font-size: 0.8em;">Chengdu</span></at-option>
-</at-select>
+<net-select v-model="model6" style="width: 140px">
+  <net-option value="1" label="深圳"><span>深圳</span><span style="float: right;opacity: .6;font-size: 0.8em;">Shenzhen</span></net-option>
+  <net-option value="2" label="广州"><span>广州</span><span style="float: right;opacity: .6;font-size: 0.8em;">Guangzhou</span></net-option>
+  <net-option value="3" label="上海"><span>上海</span><span style="float: right;opacity: .6;font-size: 0.8em;">Shanghai</span></net-option>
+  <net-option value="4" label="北京"><span>北京</span><span style="float: right;opacity: .6;font-size: 0.8em;">Beijin</span></net-option>
+  <net-option value="5" label="成都"><span>成都</span><span style="float: right;opacity: .6;font-size: 0.8em;">Chengdu</span></net-option>
+</net-select>
 ```
 :::
 
@@ -125,13 +125,13 @@
 
 :::demo
 ```html
-<at-select v-model="model7" multiple style="width: 240px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州</at-option>
-  <at-option value="3">上海</at-option>
-  <at-option value="4">北京</at-option>
-  <at-option value="5">成都</at-option>
-</at-select>
+<net-select v-model="model7" multiple style="width: 240px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州</net-option>
+  <net-option value="3">上海</net-option>
+  <net-option value="4">北京</net-option>
+  <net-option value="5">成都</net-option>
+</net-select>
 ```
 :::
 
@@ -142,16 +142,16 @@
 
 :::demo
 ```html
-<at-select v-model="model8" filterable size="large" style="width: 240px">
-  <at-option value="1">深圳</at-option>
-  <at-option value="2">广州</at-option>
-  <at-option value="3">上海</at-option>
-  <at-option value="4">北京</at-option>
-  <at-option value="5">成都</at-option>
-  <at-option value="6">厦门</at-option>
-  <at-option value="7">昆明</at-option>
-  <at-option value="8">杭州</at-option>
-</at-select>
+<net-select v-model="model8" filterable size="large" style="width: 240px">
+  <net-option value="1">深圳</net-option>
+  <net-option value="2">广州</net-option>
+  <net-option value="3">上海</net-option>
+  <net-option value="4">北京</net-option>
+  <net-option value="5">成都</net-option>
+  <net-option value="6">厦门</net-option>
+  <net-option value="7">昆明</net-option>
+  <net-option value="8">杭州</net-option>
+</net-select>
 ```
 :::
 

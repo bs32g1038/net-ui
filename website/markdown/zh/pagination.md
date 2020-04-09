@@ -11,7 +11,7 @@
 
 :::demo
 ```html
-<at-pagination :total="60"></at-pagination>
+<net-pagination :total="60"></net-pagination>
 ```
 :::
 
@@ -21,7 +21,7 @@
 
 :::demo
 ```html
-<at-pagination :total="100"></at-pagination>
+<net-pagination :total="100"></net-pagination>
 ```
 :::
 
@@ -31,7 +31,7 @@
 
 :::demo
 ```html
-<at-pagination :total="80" show-total></at-pagination>
+<net-pagination :total="80" show-total></net-pagination>
 ```
 :::
 
@@ -41,7 +41,7 @@
 
 :::demo
 ```html
-<at-pagination :total="100" show-quickjump></at-pagination>
+<net-pagination :total="100" show-quickjump></net-pagination>
 ```
 :::
 
@@ -51,7 +51,7 @@
 
 :::demo
 ```html
-<at-pagination :total="100" show-sizer></at-pagination>
+<net-pagination :total="100" show-sizer></net-pagination>
 ```
 :::
 
@@ -61,7 +61,7 @@
 
 :::demo
 ```html
-<at-pagination :total="100" show-total show-sizer show-quickjump></at-pagination>
+<net-pagination :total="100" show-total show-sizer show-quickjump></net-pagination>
 ```
 :::
 
@@ -71,7 +71,7 @@
 
 :::demo
 ```html
-<at-pagination size="small" :total="100" show-total show-sizer show-quickjump></at-pagination>
+<net-pagination size="small" :total="100" show-total show-sizer show-quickjump></net-pagination>
 ```
 :::
 
@@ -81,8 +81,8 @@
 
 :::demo
 ```html
-<at-pagination :total="100" simple></at-pagination>
-<at-pagination :total="100" size="small" simple></at-pagination>
+<net-pagination :total="100" simple></net-pagination>
+<net-pagination :total="100" size="small" simple></net-pagination>
 ```
 :::
 
@@ -108,7 +108,7 @@
 | pagesize-change | 切换每页显示的条数时触发的回调 | 每页的条目数 |
 
 <style lang="scss" scoped>
-  .at-pagination + .at-pagination {
+  .net-pagination + .net-pagination {
     margin-top: 16px;
   }
 </style>

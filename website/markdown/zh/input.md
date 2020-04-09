@@ -9,9 +9,9 @@
 
 :::demo
 ```html
-<at-input v-model="inputValue" placeholder="输入提示"></at-input>
-<at-input v-model="inputValue" placeholder="禁用状态" disabled></at-input>
-<at-input v-model="password" type="password" placeholder="密码"></at-input>
+<net-input v-model="inputValue" placeholder="输入提示"></net-input>
+<net-input v-model="inputValue" placeholder="禁用状态" disabled></net-input>
+<net-input v-model="password" type="password" placeholder="密码"></net-input>
 ```
 :::
 
@@ -21,10 +21,10 @@
 
 :::demo
 ```html
-<at-input v-model="inputValue2" placeholder="success" status="success" icon="check-circle"></at-input>
-<at-input v-model="inputValue2" placeholder="error" status="error" icon="x-circle"></at-input>
-<at-input v-model="inputValue2" placeholder="warning" status="warning" icon="alert-circle"></at-input>
-<at-input v-model="inputValue2" placeholder="info" status="info" icon="info"></at-input>
+<net-input v-model="inputValue2" placeholder="success" status="success" icon="check-circle"></net-input>
+<net-input v-model="inputValue2" placeholder="error" status="error" icon="x-circle"></net-input>
+<net-input v-model="inputValue2" placeholder="warning" status="warning" icon="alert-circle"></net-input>
+<net-input v-model="inputValue2" placeholder="info" status="info" icon="info"></net-input>
 ```
 :::
 
@@ -34,7 +34,7 @@
 
 :::demo
 ```html
-<at-input v-model="inputValue3" placeholder="请输入链接" icon="link"></at-input>
+<net-input v-model="inputValue3" placeholder="请输入链接" icon="link"></net-input>
 ```
 :::
 
@@ -44,41 +44,41 @@
 
 :::demo
 ```html
-<at-input v-model="inputValue4" placeholder="请输入内容">
+<net-input v-model="inputValue4" placeholder="请输入内容">
   <template slot="prepend">
     <span>Https://</span>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="请输入内容" size="small">
+</net-input>
+<net-input v-model="inputValue4" placeholder="请输入内容" size="small">
   <template slot="append">
     <span>@aotu.io</span>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="请输入内容">
+</net-input>
+<net-input v-model="inputValue4" placeholder="请输入内容">
   <template slot="prepend">
     <i class="icon icon-link"></i>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="请输入内容" prepend-button>
+</net-input>
+<net-input v-model="inputValue4" placeholder="请输入内容" prepend-button>
   <template slot="prepend">
     <span>搜索</span>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="请输入内容" append-button>
+</net-input>
+<net-input v-model="inputValue4" placeholder="请输入内容" append-button>
   <template slot="append">
     <span>搜索</span>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="请输入内容" prepend-button>
+</net-input>
+<net-input v-model="inputValue4" placeholder="请输入内容" prepend-button>
   <template slot="prepend">
     <i class="icon icon-search"></i>
   </template>
-</at-input>
-<at-input v-model="inputValue4" placeholder="请输入内容" append-button>
+</net-input>
+<net-input v-model="inputValue4" placeholder="请输入内容" append-button>
   <template slot="append">
     <i class="icon icon-search"></i>
   </template>
-</at-input>
+</net-input>
 ```
 :::
 
@@ -88,9 +88,9 @@
 
 :::demo
 ```html
-<at-input v-model="inputValue" size="large" placeholder="大尺寸"></at-input>
-<at-input v-model="inputValue" placeholder="正常尺寸"></at-input>
-<at-input v-model="inputValue" size="small" placeholder="小尺寸"></at-input>
+<net-input v-model="inputValue" size="large" placeholder="大尺寸"></net-input>
+<net-input v-model="inputValue" placeholder="正常尺寸"></net-input>
+<net-input v-model="inputValue" size="small" placeholder="小尺寸"></net-input>
 ```
 :::
 
@@ -143,10 +143,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.at-input {
+.net-input {
   width: 200px;
 
-  & + .at-input {
+  & + .net-input {
     margin-top: 15px;
   }
 }

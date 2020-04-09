@@ -13,8 +13,9 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
+    "publish": "lerna publish",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "format": "prettier **/**/*.{ts,tsx,js,vue} --config ./.prettierrc --ignore-path ./.prettierignore --write"
+    "format": "prettier **/**/*.{ts,tsx,js,vue,scss} --config ./.prettierrc --ignore-path ./.prettierignore --write"
   },
   "husky": {
     "hooks": {
