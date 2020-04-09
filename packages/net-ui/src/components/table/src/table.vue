@@ -223,6 +223,10 @@ export default {
             type: Number,
             default: 10,
         },
+        pageTotal: {
+            type: Number,
+            default: 0,
+        },
         showPageTotal: {
             type: Boolean,
             default: true,
@@ -257,7 +261,7 @@ export default {
             this.calculateBodyHeight();
         },
         allData() {
-            this.total = this.allData.length;
+            this.total = this.pageTotal || this.allData.length;
         },
         sortData() {
             this.handleResize();
